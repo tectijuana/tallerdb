@@ -3,11 +3,6 @@
 
 
 
-
-
-Gracias por la aclaración. Ahora ajustaré el calendario para reducir los exámenes a **tres** (uno al final de cada bloque que combine dos unidades). Aquí está el calendario actualizado con esta distribución:  
-
-```markdown
 # Calendario Escolar Febrero - Junio 2025  
 **Curso:** Taller de Bases de Datos (SCA-1025)  
 
@@ -35,10 +30,6 @@ Gracias por la aclaración. Ahora ajustaré el calendario para reducir los exám
 - **Unidad 1 y 2:** 27 Enero - 27 Febrero (Examen: 27 Febrero).  
 - **Unidad 3 y 4:** 3 Marzo - 27 Marzo (Examen: 27 Marzo).  
 - **Unidad 5 y 6:** 31 Marzo - 8 Mayo (Examen: 8 Mayo).  
-```
 
-### Cambios realizados:
-1. **Tres exámenes** al final de cada bloque (U1-U2, U3-U4, U5-U6).  
-2. Respetados días festivos y vacaciones.  
-3. Reducción equilibrada de exámenes sin afectar el flujo del curso.  
+
 
