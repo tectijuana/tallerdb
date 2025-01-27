@@ -1,3 +1,6 @@
+
+![DBA](https://github.com/user-attachments/assets/e4d4fc47-64fc-426d-a737-34e2698a7a38)
+
 # Taller de Bases de Datos (SCA-1025)  
 
 Repositorio oficial del curso **Taller de Bases de Datos**, impartido en el **TecNM Campus Instituto Tecnológico de Tijuana**. Este espacio está diseñado para organizar y compartir los recursos, tareas, y proyectos relacionados con el curso, promoviendo un aprendizaje práctico en el diseño, modelado y administración de bases de datos.
