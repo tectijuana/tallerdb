@@ -1,4 +1,5 @@
-¡Por supuesto! Aquí tienes una tabla con **50 tips adicionales** en el mismo estilo. Espero que encuentres útiles estas ideas para mejorar tus habilidades en SQL:  
+
+
 
 | **Título del Tip**                                       | **Descripción**                                                                 |
 |----------------------------------------------------------|---------------------------------------------------------------------------------|
