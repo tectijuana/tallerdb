@@ -39,11 +39,10 @@ Con **AWS** dominando el mercado de servicios en la nube, tener experiencia en s
 
 Espero que aprovechen esta oportunidad para enriquecer su formación académica y profesional. ¡No dejen pasar esta oportunidad de aprender y crecer!
 
+### Tutorial de demostración de la activacion de la beca en video
+
+ Youtube https://www.youtube.com/watch?v=dukDiHjChaA  (revisado 30-enero-25)
+
 Saludos cordiales,  
 **MC. René Solis R.**  
 Docente de Ingeniería en Sistemas
-
-
-## Video Tutorial
-
-https://www.loom.com/share/4e971d5e893e4d72aa2652f5076ec0c6?sid=ef56c1b4-b895-4454-853d-426fac978cca
