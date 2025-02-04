@@ -52,4 +52,4 @@
 | 49    | Convierte mayúsculas/minúsculas con **UPPER/LOWER**      | Cambia el caso de texto a mayúsculas o minúsculas.                             |
 | 50    | Usa **IN** para múltiples valores en una condición       | Filtra filas que coincidan con una lista de valores específicos.               |
 
-¡Espero que este formato sea justo lo que necesitabas! 🚀
+
