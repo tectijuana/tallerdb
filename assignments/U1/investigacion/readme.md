@@ -1,5 +1,5 @@
 
-# Actividad 1: Elabora una participacion de una recolección de Tips de Bases de datos relacionales, el docente ya tiene 8 entradas elaboradas, le asignamos una participación.
+# Actividad 1: Elabora una participacion de una recolección de Tips de Bases de datos relacionales, el docente ya tiene 8 entradas elaboradas, le asignamos una ENTRADA.
 
 ## ¿Donde esta el generador del recurso?
 - Ocupa registarse en ChatGtp para invocarlo el GTP https://chatgpt.com/g/g-Ir4EmYe0j-database-mentor
