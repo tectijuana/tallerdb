@@ -1,4 +1,4 @@
-# Alumno: Corza Morales Ian Kurt
+# Alumno: Corza Morales Ian Kurt - 22211544
 # Uso de INNER JOIN para Combinaciones Precisamente en SQL
 
 El **INNER JOIN** es una de las formas más comunes de combinar datos de dos o más tablas en SQL. Se usa para obtener solo aquellas filas donde hay coincidencias en ambas tablas, basándose en una condición especificada.
