@@ -1,5 +1,7 @@
 # ANGEL ELOY LANDGRAVE REZA
 
+## 💡 Usa OFFSET para paginación
+
 La paginación en SQL se puede lograr utilizando la cláusula `OFFSET` junto con `FETCH` o `LIMIT`, dependiendo del motor de base de datos que estés utilizando.
 
 ### **Paginación en SQL Server**
