@@ -36,5 +36,4 @@ RIGHT JOIN
     tabla2 b ON a.id = b.id;
 ```
 
-Esta alternativa se asegura de obtener el mismo resultado que un `FULL OUTER JOIN` cuando MySQL no lo soporta de forma directa.
 
