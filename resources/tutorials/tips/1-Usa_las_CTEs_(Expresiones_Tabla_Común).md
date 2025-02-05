@@ -1,4 +1,4 @@
-
+### Urrea Gonzalez Fernando Andre
 ### 💡 Usa las CTEs (Expresiones de Tabla Común) para simplificar consultas complejas
 
 #### ¿Qué es una CTE?
