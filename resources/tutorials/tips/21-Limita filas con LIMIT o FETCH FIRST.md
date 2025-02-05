@@ -1,5 +1,5 @@
 # JOSE JUAREZ CASTELAN 
-
+ 
 
 # 📌 Tip: Limita filas con LIMIT o FETCH FIRST en SQL
 
