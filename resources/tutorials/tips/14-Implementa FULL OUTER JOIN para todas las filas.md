@@ -38,4 +38,3 @@ RIGHT JOIN
 
 Esta alternativa se asegura de obtener el mismo resultado que un `FULL OUTER JOIN` cuando MySQL no lo soporta de forma directa.
 
-¿Puedo apoyarte con algún ejemplo específico?
