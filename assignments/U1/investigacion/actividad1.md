@@ -9,7 +9,7 @@ Es una función de agregación comúnmente usada en consultas para obtener total
 Se puede emplear tanto en consultas simples, donde devuelve la suma total de una columna, como en consultas con `GROUP BY`, permitiendo calcular sumas agrupadas por una o más categorías.
 Por ejemplo, si se tiene una tabla de ventas con una columna monto, `SUM(monto)` calculará el total de todas las ventas, mientras que `SUM(monto) GROUP BY categoria` mostrará la suma de ventas separada por categoría de productos.
 
-```
+```sql
 -- Crear la tabla ventas
 CREATE TABLE ventas (
     id INT PRIMARY KEY,        -- Identificador único de la venta
