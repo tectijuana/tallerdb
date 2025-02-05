@@ -1,5 +1,5 @@
 #Valenzuela Soto David Bernabe 
-#23210677
+#23210677 
 
 ## Usa `LAG()` y `LEAD()` para comparar filas consecutivas
 
