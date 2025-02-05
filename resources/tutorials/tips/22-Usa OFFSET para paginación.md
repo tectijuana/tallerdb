@@ -1,4 +1,4 @@
-#ANGEL ELOY LANDGRAVE REZA
+# ANGEL ELOY LANDGRAVE REZA
 
 La paginación en SQL se puede lograr utilizando la cláusula `OFFSET` junto con `FETCH` o `LIMIT`, dependiendo del motor de base de datos que estés utilizando.
 
@@ -56,5 +56,3 @@ Este ejemplo ignora los primeros 10 registros (página 1 y 2) y devuelve los sig
 - **ANSI SQL**: `FETCH FIRST N ROWS ONLY` también es una alternativa aceptada en algunos motores.
 
 Si usas una versión antigua de SQL Server (< 2012), se recomienda `ROW_NUMBER()` para la paginación.
-
-Si necesitas más detalles, dime qué base de datos estás usando. 😊
