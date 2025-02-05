@@ -5,7 +5,7 @@ Combina los resultados de múltiples consultas **sin eliminar duplicados**,
 a diferencia de `UNION`, que los elimina automáticamente.  
 
 > 🔹 **Ventaja**: `UNION ALL` es más rápido porque no necesita filtrar duplicados.  
-> 🔹 **Úsalo cuando quieras conservar todos los registros sin modificaciones.
+> 🔹 **Úsalo**  cuando quieras conservar todos los registros sin modificaciones.
 
 # 🔹 ¿Qué es `UNION ALL` en SQL?
 `UNION ALL` es un operador en SQL que se usa para combinar los resultados de dos o más consultas **sin eliminar duplicados**.  
