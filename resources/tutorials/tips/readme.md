@@ -1,4 +1,8 @@
 
+![Base de Datos](https://github.com/user-attachments/assets/4e4c3cd0-6a9c-4ac7-a1ec-8bf618b5fef4)
+
+
+
 | **#** | **Título del Tip**                                       | **Descripción**                                                                 |
 |-------|----------------------------------------------------------|---------------------------------------------------------------------------------|
 | 1     | Usa **CTEs** para simplificar consultas complejas         | Divide consultas en bloques lógicos y reutilizables para mayor claridad.       |
