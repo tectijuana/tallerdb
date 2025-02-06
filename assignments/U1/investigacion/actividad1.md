@@ -1,7 +1,7 @@
 
 # Función `SUM`
 
-*Autor: VTorres2024(No. de Control 21212058)*
+*Autor: TORRES EQUIHUA VICTOR MANUEL (No. de Control 21212058)*
 
 La función `SUM` en SQL se utiliza para calcular la suma total de los valores en una columna específica de una tabla, siempre que esta columna contenga datos numéricos.
 Es una función de agregación comúnmente usada en consultas para obtener totales de ventas, ingresos, cantidades u otros valores numéricos acumulativos.
