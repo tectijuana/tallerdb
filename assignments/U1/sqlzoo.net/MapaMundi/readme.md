@@ -5,6 +5,10 @@ La participacion es por directorio "/nickname/readme.md "
 Debe poner los SQL scripts en formato markdown usando el esquema:
 
 
+LOOM demostrativo la entrega es por CONTRIBUCION (como la actividada pasada)
+https://www.loom.com/share/c999f499ea0c46b7805290ed3882221d?sid=00b35ab9-030b-4b9a-8613-a833d8c02c97
+
+
 ````sql (usamos 3 comillas para formato código)
 # Problema 1:
 codigo
