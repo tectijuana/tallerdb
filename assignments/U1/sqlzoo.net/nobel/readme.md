@@ -12,6 +12,11 @@ codigo
 codigo
 ````
 
+
+LOOM demostrativo la entrega es por CONTRIBUCION (como la actividada pasada)
+https://www.loom.com/share/c999f499ea0c46b7805290ed3882221d?sid=00b35ab9-030b-4b9a-8613-a833d8c02c97
+
+
 RUBRICA:
 
 # 📊 Rúbrica de Evaluación - Ejercicios en SQLZOO.NET
