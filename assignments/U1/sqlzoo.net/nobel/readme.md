@@ -14,7 +14,7 @@ codigo
 
 
 LOOM demostrativo la entrega es por CONTRIBUCION (como la actividada pasada)
-https://www.loom.com/share/c999f499ea0c46b7805290ed3882221d?sid=00b35ab9-030b-4b9a-8613-a833d8c02c97
+[https://www.loom.com/share/c999f499ea0c46b7805290ed3882221d?sid=00b35ab9-030b-4b9a-8613-a833d8c02c97](https://www.loom.com/share/c999f499ea0c46b7805290ed3882221d?sid=009a5903-1295-405a-bf88-8a86bde9c636)
 
 
 RUBRICA:
