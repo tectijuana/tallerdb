@@ -1,11 +1,11 @@
-#**Corza Morales Ian Kurt 22211544**
+# **Corza Morales Ian Kurt 22211544**
 
-##1- Change the query shown so that it displays Nobel prizes for 1950.
+## 1- Change the query shown so that it displays Nobel prizes for 1950.
 SELECT yr, subject, winner
   FROM nobel
  WHERE yr = 1950
 
-##2- Show who won the 1962 prize for literature.
+## 2- Show who won the 1962 prize for literature.
 SELECT winner
   FROM nobel
  WHERE yr = 1962
