@@ -1,4 +1,4 @@
-
+### Urrea Gonzalez Fernando Andre
 ### 💡 Usa **COALESCE** para manejar valores nulos de manera inteligente
 
 #### ¿Qué es `COALESCE`?
