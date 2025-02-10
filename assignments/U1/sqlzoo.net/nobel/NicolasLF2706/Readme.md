@@ -33,6 +33,10 @@ SELECT * FROM nobel
  WHERE winner IN ('Theodore Roosevelt', 'Thomas Woodrow Wilson',
  'Jimmy Carter', 'Barack Obama')
 
+# 7
+SELECT winner FROM nobel
+WHERE winner LIKE 'John %'
+
 # 8
 SELECT * FROM nobel
 WHERE subject = 'physics'
