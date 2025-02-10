@@ -1,72 +1,113 @@
-### 
+---
 
-1. Read the notes about this table. Observe the result of running this SQL command to show the name, continent and population of all countries.
+### **Ulises Hernandez Bojorquez - #23210598**  
 
-,,,SQL
-SELECT name, continent, population FROM world
-,,,
+---
 
-2.How to use WHERE to filter records. Show the name for the countries that have a population of at least 200 million. 200 million is 200000000, there are eight zeros. 
-SELECT name FROM world
-WHERE population >= 200000000
+# **Consultas de la pratica de clase en SQLZOO 🚀**  
+## Practica de clase 👍
 
-3.Give the name and the per capita GDP for those countries with a population of at least 200 million. 
-Select name, gdp/population
-From world
-Where population >= 200000000
+### **1. Mostrar nombre, continente y población de todos los países**  
+```sql
+SELECT name, continent, population FROM world;
+```
 
-4. Show the name and population in millions for the countries of the continent 'South America'. Divide the population by 1000000 to get population in millions.
-Select name, population/1000000 
-From world
-Where continent = 'south america'
+### **2. Filtrar países con una población de al menos 200 millones**  
+```sql
+SELECT name 
+FROM world
+WHERE population >= 200000000;
+```
 
-5. Show the name and population for France, Germany, Italy
-   Select name, population
-From world
-Where name in ('France','Germany','Italy')
+### **3. Mostrar nombre y PIB per cápita para países con al menos 200 millones de habitantes**  
+```sql
+SELECT name, gdp/population AS per_capita_gdp
+FROM world
+WHERE population >= 200000000;
+```
 
-6.Show the countries which have a name that includes the word 'United'
-Select name
-From world
-Where name Like '%United%'
+### **4. Mostrar el nombre y la población en millones para los países de Sudamérica**  
+```sql
+SELECT name, population / 1000000 AS population_millions
+FROM world
+WHERE continent = 'South America';
+```
 
-7. Two ways to be big: A country is big if it has an area of more than 3 million sq km or it has a population of more than 250 million.
+### **5. Mostrar el nombre y la población de Francia, Alemania e Italia**  
+```sql
+SELECT name, population
+FROM world
+WHERE name IN ('France', 'Germany', 'Italy');
+```
 
-Show the countries that are big by area or big by population. Show name, population and area.
+### **6. Mostrar los países cuyo nombre contiene la palabra 'United'**  
+```sql
+SELECT name
+FROM world
+WHERE name LIKE '%United%';
+```
 
-Select name, population, area
-From world
-Where area > 3000000
-or population >250000000
+### **7. Mostrar los países que son grandes por área (más de 3 millones km²) o por población (más de 250 millones)**  
+```sql
+SELECT name, population, area
+FROM world
+WHERE area > 3000000
+   OR population > 250000000;
+```
 
-8. Exclusive OR (XOR). Show the countries that are big by area (more than 3 million) or big by population (more than 250 million) but not both. Show name, population and area.
+### **8. Mostrar países que son grandes por área o por población, pero no por ambas (XOR)**  
+```sql
+SELECT name, population, area
+FROM world
+WHERE 
+    (population > 250000000 AND area < 3000000)
+    OR 
+    (population < 250000000 AND area > 3000000);
+```
 
-    Australia has a big area but a small population, it should be included.
-    Indonesia has a big population but a small area, it should be included.
-    China has a big population and big area, it should be excluded.
-    United Kingdom has a small population and a small area, it should be excluded.
+### **9. Mostrar nombre, población en millones y PIB en miles de millones para Sudamérica y América**  
+```sql
+SELECT name, 
+       ROUND(population / 1000000, 2) AS population_millions, 
+       ROUND(gdp / 1000000000, 2) AS gdp_billions
+FROM world
+WHERE continent = 'South America';
+```
 
-Select name, population, area
-From world
-Where 
-(population > 250000000 and area < 3000000)
-or
-(population < 250000000 and area > 3000000);
+### **10. Mostrar nombre y PIB per cápita para países con un PIB de al menos 1 billón, redondeado a 1000**  
+```sql
+SELECT name, 
+       ROUND(gdp / population, -3) AS per_capita_gdp
+FROM world
+WHERE gdp >= 1000000000000;
+```
 
+### **11. Mostrar países donde el nombre y la capital tienen la misma cantidad de caracteres**  
+```sql
+SELECT name, capital
+FROM world
+WHERE LENGTH(name) = LENGTH(capital);
+```
 
-9.
+### **12. Mostrar países donde el nombre y la capital comienzan con la misma letra (pero no son iguales)**  
+```sql
+SELECT name, capital
+FROM world
+WHERE LEFT(name, 1) = LEFT(capital, 1) 
+  AND name != capital;
+```
 
-
-
-
-
-
-
-
-
-
-
-
+### **13. Encontrar el país cuyo nombre contiene todas las vocales (a, e, i, o, u) sin espacios**  
+```sql
+SELECT name 
+FROM world
+WHERE name LIKE '%a%' 
+  AND name LIKE '%e%' 
+  AND name LIKE '%i%' 
+  AND name LIKE '%o%' 
+  AND name LIKE '%u%' 
+  AND name NOT LIKE '% %';
+```
 
 
 
