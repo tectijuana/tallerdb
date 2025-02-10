@@ -60,12 +60,23 @@ WHERE subject = 'Literature'
 AND yr >= 2004
 
 # 11
-
+SELECT * FROM nobel
+WHERE winner = 'Peter Grünberg'
 
 # 12
-
+SELECT * FROM nobel
+WHERE winner = 'Eugene O''Neill'
 
 # 13
-
+SELECT winner, yr, subject FROM nobel
+WHERE winner LIKE 'Sir %'
+ORDER BY -yr, winner
 
 # 14
+SELECT winner, subject FROM nobel
+WHERE yr = 1984
+ORDER BY 
+    CASE 
+        WHEN subject IN ('Chemistry', 'Physics') THEN 1
+        ELSE 0
+    END, subject, winner
