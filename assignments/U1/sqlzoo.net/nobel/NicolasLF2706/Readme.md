@@ -49,3 +49,23 @@ SELECT * FROM nobel
 WHERE yr = 1980
 AND subject != 'chemistry'
 AND subject != 'medicine'
+
+# 10
+SELECT * FROM nobel
+WHERE subject = 'Medicine'
+AND yr < 1910
+UNION
+SELECT * FROM nobel
+WHERE subject = 'Literature'
+AND yr >= 2004
+
+# 11
+
+
+# 12
+
+
+# 13
+
+
+# 14
