@@ -42,5 +42,6 @@ https://www.loom.com/share/6f19db2375b3436ba7e8312f3bf6fbd8?sid=3c78faf3-024a-44
 # IDoceo
 
 Serian 2 enlances uno de Loom y otro de su GIST, no pantallas.JPG ni PDF´s
+
 ![Screenshot 2025-02-10 at 10 42 56 p m](https://github.com/user-attachments/assets/3e50a136-90a6-4864-bc12-69465aaaafcc)
 
