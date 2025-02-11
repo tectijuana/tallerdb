@@ -2,6 +2,16 @@
 ## Nombre: Luis Daniel Suarez Nieto - 22210356
 ## Ejercicios  
 
+Este ejercicio explora el uso de subconsultas en SQL para realizar consultas más avanzadas en una base de datos que contiene información sobre países del mundo. Se enfoca en la selección de datos basada en comparaciones con valores obtenidos dinámicamente mediante subconsultas dentro de la cláusula WHERE.
+
+A lo largo del ejercicio, se aplican conceptos clave como:
+
+Comparaciones con valores específicos obtenidos de subconsultas (por ejemplo, países con mayor población que Rusia).
+Uso de operadores como ALL e IN para comparar un valor con múltiples resultados de una subconsulta.
+Filtrado basado en cálculos dentro de la consulta (como el PIB per cápita o la población relativa a otro país).
+Subconsultas correlacionadas, que dependen de valores en la consulta principal, y no correlacionadas, que pueden ejecutarse por separado.
+Estos ejercicios permiten comprender cómo SQL puede trabajar con datos dinámicos, comparar valores en diferentes niveles y extraer información más específica mediante subconsultas. 💡
+
 ### 1  
 ```sql
 SELECT name FROM world
