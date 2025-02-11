@@ -144,6 +144,8 @@ WHERE population > 3 * (
 );
 ```
 
+--- 
+Espero te sirvan estos codigos para practicar 
+
 ✅ **Solución:** Se usa una subconsulta para encontrar el segundo país más poblado de cada continente y se filtran aquellos cuya población sea más de tres veces mayor.
 
----
