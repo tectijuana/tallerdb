@@ -1,4 +1,4 @@
-#Esteves Peña Samuel 22210762 28Samuel28
+*Esteves Peña Samuel 22210762 28Samuel28
 ## 1. Países con mayor población que Rusia
 ```sql
 SELECT name FROM world
