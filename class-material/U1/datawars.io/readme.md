@@ -1,3 +1,6 @@
+
+![Screenshot 2025-02-10 at 10 50 15 p m](https://github.com/user-attachments/assets/60e78032-1eef-462e-af13-010cec8062fd)
+
 # DATAWARS.IO
 
 
