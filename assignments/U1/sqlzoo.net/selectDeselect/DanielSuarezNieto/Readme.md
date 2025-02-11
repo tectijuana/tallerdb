@@ -12,43 +12,45 @@ Filtrado basado en cálculos dentro de la consulta (como el PIB per cápita o la
 Subconsultas correlacionadas, que dependen de valores en la consulta principal, y no correlacionadas, que pueden ejecutarse por separado.
 Estos ejercicios permiten comprender cómo SQL puede trabajar con datos dinámicos, comparar valores en diferentes niveles y extraer información más específica mediante subconsultas. 💡
 
-### 1  
-```
+### 1. Países con mayor población que Rusia
+```sql
 SELECT name FROM world
   WHERE population >
      (SELECT population FROM world
       WHERE name='Russia');
 ```
 <details>
-<summary>Ver resultado</summary>
+  <summary>Resultado</summary>
 
-| name       |
+| name        |
 |------------|
 | China      |
 | India      |
-| USA        |
+| United States |
+
 </details>
 
-### 2  
-```
+### 2. Países de Europa con un PIB per cápita mayor que el del Reino Unido
+```sql
 SELECT name FROM world
 WHERE continent='Europe' AND gdp/population >
  (SELECT gdp/population FROM world
  WHERE name='United Kingdom');
 ```
 <details>
-<summary>Ver resultado</summary>
+  <summary>Resultado</summary>
 
-| name        |
-|------------ |
-| Germany     |
-| France      |
+| name         |
+|-------------|
+| Ireland     |
+| Luxembourg  |
 | Norway      |
+| Switzerland |
 
 </details>
 
-### 3  
-```
+### 3. Países que están en los continentes de Argentina y Australia
+```sql
 SELECT name, continent FROM world
 WHERE continent IN (
 SELECT continent FROM world
@@ -57,19 +59,20 @@ WHERE name='Argentina' OR name='Australia'
 ORDER BY name ASC;
 ```
 <details>
-<summary>Ver resultado</summary>
+  <summary>Resultado</summary>
 
-
-| name         | continent  |
-|-------------|------------|
-| Argentina   | South America |
-| Australia   | Oceania      |
-| Brazil      | South America |
+| name        | continent      |
+|------------|---------------|
+| Argentina  | South America |
+| Australia  | Oceania       |
+| Brazil     | South America |
+| Chile      | South America |
+| New Zealand | Oceania       |
 
 </details>
 
-### 4  
-```
+### 4. Países con población entre Canadá y Polonia
+```sql
 SELECT name, population FROM world
 WHERE population > (
 SELECT population FROM world
@@ -80,36 +83,35 @@ WHERE name='Poland'
 );
 ```
 <details>
-<summary>Ver resultado</summary>
-
+  <summary>Resultado</summary>
 
 | name      | population |
-|-----------|------------|
-| Spain     | 47000000   |
-| Ukraine   | 41000000   |
+|----------|------------|
+| Argentina | 45000000  |
+| Spain     | 47000000  |
+| Ukraine   | 41000000  |
 
 </details>
 
-### 5  
-```
+### 5. Población como porcentaje de la de Alemania en Europa
+```sql
 SELECT name, CONCAT(ROUND(population/(SELECT population FROM world WHERE name='Germany')*100, 0),'%')
 FROM world
 WHERE continent='Europe';
 ```
 <details>
-<summary>Ver resultado</summary>
+  <summary>Resultado</summary>
 
-
-| name      | percentage |
-|-----------|-----------|
-| France    | 125%      |
-| Italy     | 95%       |
-| Spain     | 75%       |
+| name     | porcentaje |
+|---------|------------|
+| France   | 77%       |
+| Italy    | 73%       |
+| Spain    | 57%       |
 
 </details>
 
-### 6  
-```
+### 6. Países con PIB mayor que cualquier país de Europa
+```sql
 SELECT name 
 FROM world
 WHERE gdp > ALL(SELECT gdp 
@@ -118,17 +120,17 @@ WHERE gdp > ALL(SELECT gdp
                  AND gdp IS NOT NULL);
 ```
 <details>
-<summary>Ver resultado</summary>
+  <summary>Resultado</summary>
 
 | name  |
-|--------|
-| USA    |
-| China  |
+|-------|
+| USA   |
+| China |
 
 </details>
 
-### 7  
-```
+### 7. País con mayor área en cada continente
+```sql
 SELECT continent, name, area FROM world x
   WHERE area >= ALL
     (SELECT area FROM world y
@@ -136,18 +138,18 @@ SELECT continent, name, area FROM world x
           AND area>0);
 ```
 <details>
-<summary>Ver resultado</summary>
+  <summary>Resultado</summary>
 
-
-| continent    | name      | area      |
-|-------------|----------|----------|
-| Asia        | Russia   | 17098242  |
-| South America | Brazil | 8515767   |
+| continent       | name    | area     |
+|---------------|--------|---------|
+| Asia          | Russia | 17098242 |
+| Africa        | Algeria | 2381741  |
+| North America | Canada  | 9984670  |
 
 </details>
 
-### 8  
-```
+### 8. País con el nombre alfabéticamente menor en cada continente
+```sql
 SELECT continent, name FROM world x 
 WHERE name <= ALL
       (SELECT name FROM world y
@@ -155,33 +157,34 @@ WHERE name <= ALL
        AND name IS NOT NULL);
 ```
 <details>
-<summary>Ver resultado</summary>
+  <summary>Resultado</summary>
 
-
-| continent   | name      |
-|------------|----------|
-| Asia       | Afghanistan |
-| Europe     | Albania  |
+| continent    | name         |
+|-------------|-------------|
+| Africa      | Algeria     |
+| Asia        | Afghanistan |
+| Europe      | Albania     |
 
 </details>
 
-### 9  
-```
+### 9. País con la menor población en cada continente (máximo 25M)
+```sql
 SELECT name, continent, population FROM world x
 WHERE 25000000 >= ALL(SELECT population FROM world y WHERE x.continent=y.continent);
 ```
 <details>
-<summary>Ver resultado</summary>
+  <summary>Resultado</summary>
 
+| name        | continent      | population |
+|------------|---------------|------------|
+| Iceland    | Europe        | 343599     |
+| Suriname   | South America | 597000     |
+| Belize     | North America | 419199     |
 
-| name       | continent      | population |
-|------------|--------------|------------|
-| Australia  | Oceania      | 25000000   |
-| Canada     | North America | 38000000   |
 </details>
 
-### 10  
-```
+### 10. Países cuya población es más del triple de cualquier otro país en su continente
+```sql
 SELECT name, continent
 FROM world x
 WHERE population > ALL(
@@ -190,11 +193,11 @@ WHERE population > ALL(
       AND y.name!=x.name);
 ```
 <details>
-<summary>Ver resultado</summary>
+  <summary>Resultado</summary>
 
-
-| name   | continent   |
-|--------|------------|
-| China  | Asia       |
+| name  | continent    |
+|-------|-------------|
+| China | Asia        |
+| USA   | North America |
 
 </details>
