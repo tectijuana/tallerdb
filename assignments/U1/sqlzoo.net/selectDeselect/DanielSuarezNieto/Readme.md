@@ -22,13 +22,11 @@ SELECT name FROM world
 <details>
 <summary>Ver resultado</summary>
 
-```
 | name       |
 |------------|
 | China      |
 | India      |
 | USA        |
-```
 </details>
 
 ### 2  
@@ -41,13 +39,12 @@ WHERE continent='Europe' AND gdp/population >
 <details>
 <summary>Ver resultado</summary>
 
-```
 | name        |
 |------------ |
 | Germany     |
 | France      |
 | Norway      |
-```
+
 </details>
 
 ### 3  
@@ -62,13 +59,13 @@ ORDER BY name ASC;
 <details>
 <summary>Ver resultado</summary>
 
-```
+
 | name         | continent  |
 |-------------|------------|
 | Argentina   | South America |
 | Australia   | Oceania      |
 | Brazil      | South America |
-```
+
 </details>
 
 ### 4  
@@ -85,12 +82,12 @@ WHERE name='Poland'
 <details>
 <summary>Ver resultado</summary>
 
-```
+
 | name      | population |
 |-----------|------------|
 | Spain     | 47000000   |
 | Ukraine   | 41000000   |
-```
+
 </details>
 
 ### 5  
@@ -102,13 +99,13 @@ WHERE continent='Europe';
 <details>
 <summary>Ver resultado</summary>
 
-```
+
 | name      | percentage |
 |-----------|-----------|
 | France    | 125%      |
 | Italy     | 95%       |
 | Spain     | 75%       |
-```
+
 </details>
 
 ### 6  
@@ -123,12 +120,11 @@ WHERE gdp > ALL(SELECT gdp
 <details>
 <summary>Ver resultado</summary>
 
-```
 | name  |
 |--------|
 | USA    |
 | China  |
-```
+
 </details>
 
 ### 7  
@@ -142,12 +138,12 @@ SELECT continent, name, area FROM world x
 <details>
 <summary>Ver resultado</summary>
 
-```
+
 | continent    | name      | area      |
 |-------------|----------|----------|
 | Asia        | Russia   | 17098242  |
 | South America | Brazil | 8515767   |
-```
+
 </details>
 
 ### 8  
@@ -161,12 +157,12 @@ WHERE name <= ALL
 <details>
 <summary>Ver resultado</summary>
 
-```
+
 | continent   | name      |
 |------------|----------|
 | Asia       | Afghanistan |
 | Europe     | Albania  |
-```
+
 </details>
 
 ### 9  
@@ -177,12 +173,11 @@ WHERE 25000000 >= ALL(SELECT population FROM world y WHERE x.continent=y.contine
 <details>
 <summary>Ver resultado</summary>
 
-```
+
 | name       | continent      | population |
 |------------|--------------|------------|
 | Australia  | Oceania      | 25000000   |
 | Canada     | North America | 38000000   |
-```
 </details>
 
 ### 10  
@@ -197,9 +192,9 @@ WHERE population > ALL(
 <details>
 <summary>Ver resultado</summary>
 
-```
+
 | name   | continent   |
 |--------|------------|
 | China  | Asia       |
-```
+
 </details>
