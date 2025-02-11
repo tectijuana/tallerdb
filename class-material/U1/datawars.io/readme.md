@@ -27,6 +27,14 @@ Practicar bases de datos y programación a través de DataWars.io es una excelen
 
 # ACTIVIDAD:
 - ELABORA TUTORIAL DE BASE DE DATOS.
--                                                                                                                                                                                                                   
 
+# ENVIAR EVIDENCIAS DE LOGRO EN LOOM.COM
+- LOOM.COM le dara 5 minutos de grabación lo que se busca es de una panoramica de su cuenta que ha cubierto los avances esperados.
+- Enviar el enlace Loom.com
+
+# VISTASO
 https://www.loom.com/share/6f19db2375b3436ba7e8312f3bf6fbd8?sid=3c78faf3-024a-4497-a40a-56636001ba6b
+
+# IDoceo
+![Screenshot 2025-02-10 at 10 42 56 p m](https://github.com/user-attachments/assets/3e50a136-90a6-4864-bc12-69465aaaafcc)
+
