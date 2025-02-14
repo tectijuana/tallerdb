@@ -1,0 +1,52 @@
+--------
+## 	Cuenta filas con COUNT(*)
+--------
+
+COUNT(*) se usa en SQL para contar el número total de filas en una tabla 
+o en un subconjunto de datos definido por una cláusula WHERE.
+--------
+Ejemplo 1: Contar todas las filas de una tabla
+
+```sql
+SELECT COUNT(*) AS total_filas FROM empleados;
+```
+
+Esto devuelve el número total de filas en la tabla empleados.
+
+--------
+Ejemplo 2: Contar filas con una condición
+
+```sql
+SELECT COUNT(*) AS empleados_activos FROM empleados WHERE estado = 'activo';
+```
+
+Esto cuenta cuántos empleados tienen el estado "activo".
+
+--------
+## Diferencia con COUNT(columna)
+--------
+
+Si usas COUNT(columna), solo cuenta las filas donde la columna no es NULL:
+
+```sql
+SELECT COUNT(salario) AS empleados_con_sueldo FROM empleados;
+```
+
+Esto solo contará las filas donde salario no sea NULL.
+
+🔹 Dato útil: COUNT(1) es equivalente a COUNT(*), y en algunos motores de bases de datos puede ser ligeramente más eficiente. 🚀
+
+--------
+## COUNT(*) vs COUNT(1)
+--------
+
+Ambos devuelven el mismo resultado:
+
+```sql
+SELECT COUNT(1) FROM NombreDeLaTabla;
+```
+
+COUNT(1) simplemente cuenta filas sin importar los valores, y en términos de rendimiento, es prácticamente idéntico a COUNT(*).
+
+
+## Ruiz Luevano Odalys Itzel
