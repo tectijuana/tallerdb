@@ -1,6 +1,3 @@
-Aquí tienes el caso ajustado y mejorado para una **oficina de proyectos de marketing**, con un enfoque en la gestión de campañas, clientes y equipos creativos:
-
----
 
 ### **Caso: Sistema de Gestión para una Oficina de Proyectos de Marketing**
 
@@ -69,4 +66,4 @@ Aquí tienes el caso ajustado y mejorado para una **oficina de proyectos de mark
    - Presupuesto estimado de la campaña.
    - Registro del gasto real (opcional).
 
--
+Elabore los analisis para atender este caso de proyecto en equipo.
