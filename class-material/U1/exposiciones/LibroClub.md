@@ -1,4 +1,5 @@
 
+![image](https://github.com/user-attachments/assets/fce64c81-dba9-433c-909a-7610e0c2cc16)
 
 **Caso: Sistema de Gestión de una Librería Local**
 
