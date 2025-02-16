@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/6d90de79-689f-430a-873e-a80e3fc7d186)
 
 ### **Caso: Sistema de Gestión para una Oficina de Proyectos de Marketing**
 
