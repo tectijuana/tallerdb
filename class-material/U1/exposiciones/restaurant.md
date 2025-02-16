@@ -1,34 +1,37 @@
-**Caso: Sistema de Gestión de un Restaurante con Servicio a Domicilio**
+
+<img width="741" alt="Screenshot 2025-02-16 at 2 04 30 p m" src="https://github.com/user-attachments/assets/8fad86be-71b9-4dc0-90c3-96c632046fc4" />
+
+**Caso: Sistema de Gestión para el Restaurante "El Rincón Escondido" con Servicio a Domicilio**
 
 **Entrevista con el cliente:**
 
-*Cliente*: Hola, necesitamos un sistema para organizar los pedidos en nuestro restaurante. Ofrecemos servicio en el local, para llevar y a domicilio, y ya es complicado manejarlo todo manualmente.
+**Consultor:** Hola, es un gusto hablar con usted. ¿Cómo podemos ayudarle?
 
-*Consultor*: Entendido. Cuénteme cómo funciona su operación actualmente.
+**Cliente:** Hola, necesitamos un sistema para organizar los pedidos de nuestro restaurante. Ofrecemos servicio en el local, para llevar y a domicilio, pero manejar todo manualmente se ha vuelto complicado.
 
-*Cliente*: Los clientes hacen pedidos en el restaurante o por teléfono. Registramos el pedido en papel, pero a veces se pierden o no se entiende bien lo que anotamos. Además, para los pedidos a domicilio, tenemos que asignar un repartidor, pero no llevamos un control claro.
+**Consultor:** Entendido. ¿Podría explicarme cómo llevan su operación actualmente?
 
-*Consultor*: ¿Qué información necesitan registrar para los pedidos?
+**Cliente:** Claro. Los clientes hacen pedidos en el restaurante o por teléfono. Registramos los pedidos en papel, pero a veces se pierden o no queda claro lo que escribimos. Además, para los pedidos a domicilio asignamos un repartidor, pero no llevamos un control formal.
 
-*Cliente*: Lo básico: los detalles del cliente, el tipo de pedido (en el local, para llevar o a domicilio), los platos que han solicitado, y el total a pagar. En el caso de los pedidos a domicilio, también necesitamos la dirección y el repartidor asignado.
+**Consultor:** Comprendido. ¿Qué información le gustaría registrar sobre los pedidos?
 
-*Consultor*: ¿Qué tipo de información necesitan sobre los clientes?
+**Cliente:** Lo principal es tener los datos del cliente, el tipo de pedido (en el local, para llevar o a domicilio), los platos que solicitan y el total a pagar. Para pedidos a domicilio también necesitamos registrar la dirección de entrega y el repartidor asignado. Y cuando el cliente pide factura, simplemente les damos el WhatsApp del contador para que ellos lo gestionen.
 
-*Cliente*: Nombre, teléfono y dirección. A veces tenemos clientes frecuentes, y nos gustaría que el sistema los recuerde para que el proceso sea más rápido.
+**Consultor:** Perfecto. ¿Qué datos le interesa registrar sobre los clientes?
 
-*Consultor*: ¿Y sobre los productos que venden?
+**Cliente:** Básicamente nombre, teléfono y dirección. También sería útil que el sistema recuerde a los clientes frecuentes para agilizar el proceso.
 
-*Cliente*: Tenemos un menú fijo, con platos organizados por categorías (entradas, platos fuertes, bebidas, postres). Cada plato tiene un precio, y algunos tienen opciones extra, como ingredientes adicionales o tamaños diferentes.
+**Consultor:** ¿Y sobre los productos que ofrecen?
 
-*Consultor*: ¿Cómo gestionan el pago de los pedidos?
+**Cliente:** Tenemos un menú fijo con platos organizados por categorías: entradas, platos fuertes, bebidas y postres. Cada plato tiene un precio y, en algunos casos, opciones adicionales como ingredientes extra o tamaños diferentes.
 
-*Cliente*: Lo hacemos al momento, ya sea en efectivo, tarjeta o transferencia. Sería útil registrar el método de pago y si el pedido ya fue pagado o no.
+**Consultor:** ¿Cómo gestionan los pagos de los pedidos?
 
-*Consultor*: Perfecto. ¿Hay algo más que considere importante incluir?
+**Cliente:** El pago se realiza al momento, ya sea en efectivo, tarjeta o transferencia. Sería útil registrar el método de pago y saber si el pedido ya fue pagado.
 
-*Cliente*: Sí, me gustaría un reporte diario de los pedidos realizados, ingresos, los platos más vendidos y un control del estado de los pedidos (en preparación, listo, entregado).
+**Consultor:** Muy bien. ¿Hay algo más que considere importante incluir en el sistema?
+
+**Cliente:** Sí, me gustaría que el sistema genere reportes diarios con los pedidos realizados, los ingresos, los platos más vendidos y un seguimiento del estado de los pedidos (en preparación, listo, entregado).
 
 ---
-
-Este caso es ideal para diseñar un sistema de base de datos con tablas como *Clientes*, *Pedidos*, *Platos*, *Categorías de Platos*, *Repartidores* y *Pagos*. También permite trabajar con relaciones entre pedidos, clientes y repartidores, además de gestionar estados de pedidos y generar reportes.
 
