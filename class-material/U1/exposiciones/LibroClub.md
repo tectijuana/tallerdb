@@ -1,6 +1,4 @@
-Aquí tienes un caso del mundo real para un taller de bases de datos, incluyendo una simulación de una entrevista con el cliente:
 
----
 
 **Caso: Sistema de Gestión de una Librería Local**
 
