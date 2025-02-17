@@ -1,4 +1,8 @@
-**Caso: Sistema de Gestión de Ventas al Mayoreo de Mariscos**
+
+![image](https://github.com/user-attachments/assets/01f1ee6c-d6bd-454c-abf1-2c55b79899f5)
+
+
+## **Caso: Sistema de Gestión de Ventas al Mayoreo de Mariscos**
 
 **Entrevista con el cliente:**
 
@@ -32,17 +36,5 @@
 
 *Cliente*: Sí, sería ideal que el sistema me avise cuando el inventario de un producto esté por debajo de cierto nivel. Así podemos pedir más a tiempo.
 
----
 
-**Resumen del Caso:**
-
-Este sistema necesitaría las siguientes tablas principales:
-1. **Clientes**: Información básica de cada cliente mayorista.
-2. **Productos**: Detalles de los mariscos (nombre, precio por kilogramo, cantidad en inventario, etc.).
-3. **Pedidos**: Registro de pedidos con fecha, estado y cliente.
-4. **Detalle de Pedidos**: Productos, cantidades y precios específicos por pedido.
-5. **Pagos**: Métodos y estados de pago.
-6. **Historial de Inventario**: Lotes nuevos y ajustes de inventario.
-
-Con este diseño, se puede desarrollar un sistema para gestionar pedidos, clientes, inventarios y reportes.
 
