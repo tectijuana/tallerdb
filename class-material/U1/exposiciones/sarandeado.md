@@ -37,39 +37,64 @@
 *Cliente*: Sí, sería ideal que el sistema me avise cuando el inventario de un producto esté por debajo de cierto nivel. Así podemos pedir más a tiempo.
 
 ---
-Procedimiento de Análisis para la Revisión de la Redacción del Caso: Sistema de Gestión de Ventas al Mayoreo de Mariscos
-Objetivo:
+# **Procedimiento de Análisis para la Revisión de la Redacción del Caso: Sistema de Gestión de Ventas al Mayoreo de Mariscos**
 
-1. Análisis de Contexto y Comprensión del Caso
-Paso 1: Leer la redacción completa del caso de manera detallada.
-Paso 2: Identificar el propósito principal del sistema propuesto.
-Paso 3: Determinar los procesos clave que el sistema debe gestionar (ventas, inventario, clientes, pedidos, pagos y reportes).
-2. Evaluación de la Coherencia y Precisión de la Información
-Paso 4: Revisar que la información proporcionada por el cliente en la entrevista sea lógica y estructurada.
-Paso 5: Verificar si hay detalles confusos o aspectos que necesiten mayor especificación.
-Paso 6: Comprobar que los términos utilizados sean adecuados para el contexto del negocio mayorista de mariscos.
-Paso 7: Evaluar si el orden de las preguntas y respuestas fluye de manera natural y progresiva.
-3. Validación de Requisitos Funcionales
-Paso 8: Extraer de la redacción los requisitos explícitos e implícitos del sistema.
-Paso 9: Comparar los requisitos identificados con la estructura de la entrevista y validar que se mencionan claramente.
-Paso 10: Asegurar que se incluyan todos los aspectos críticos del negocio:
-Gestión de productos (nombre, descripción, precio, stock, lotes).
-Gestión de clientes (datos generales, precios especiales).
-Gestión de pedidos (registro, estado, fechas, pagos).
-Reportes y alertas (ventas, inventario bajo, clientes frecuentes).
-4. Análisis de Claridad y Comprensión Técnica
-Paso 11: Evaluar si la entrevista es comprensible tanto para desarrolladores como para el cliente final.
-Paso 12: Verificar si los términos técnicos están explicados de manera que un usuario no técnico pueda entenderlos.
-Paso 13: Revisar si las respuestas del cliente contienen redundancias innecesarias o pueden sintetizarse sin perder información.
-5. Identificación de Posibles Omisiones
-Paso 14: Preguntar si hay aspectos no considerados, como:
-Integración con sistemas externos (facturación, proveedores).
-Seguridad de los datos y acceso de usuarios.
-Opciones de exportación de reportes (PDF, Excel).
-Posible escalabilidad del sistema en el futuro.
-6. Redacción de Ajustes y Propuesta de Mejora
-Paso 15: Hacer ajustes en la redacción para mejorar la claridad y estructura.
-Paso 16: Presentar una versión mejorada a los responsables del proyecto para su validación.
-Paso 17: Obtener retroalimentación del cliente y de los técnicos antes de proceder a la etapa de diseño del sistema.
+## **Objetivo**
+Garantizar que la redacción del caso refleje con precisión los requerimientos del cliente y sea clara para su posterior implementación técnica.
 
+---
 
+## **1. Análisis de Contexto y Comprensión del Caso**
+1. **Leer** la redacción completa del caso de manera detallada.
+2. **Identificar** el propósito principal del sistema propuesto.
+3. **Determinar** los procesos clave que el sistema debe gestionar:
+   - Ventas
+   - Inventario
+   - Clientes
+   - Pedidos
+   - Pagos
+   - Reportes
+
+---
+
+## **2. Evaluación de la Coherencia y Precisión de la Información**
+4. **Revisar** que la información proporcionada por el cliente en la entrevista sea lógica y estructurada.
+5. **Verificar** si hay detalles confusos o aspectos que necesiten mayor especificación.
+6. **Comprobar** que los términos utilizados sean adecuados para el contexto del negocio mayorista de mariscos.
+7. **Evaluar** si el orden de las preguntas y respuestas fluye de manera natural y progresiva.
+
+---
+
+## **3. Validación de Requisitos Funcionales**
+8. **Extraer** de la redacción los requisitos explícitos e implícitos del sistema.
+9. **Comparar** los requisitos identificados con la estructura de la entrevista y validar que se mencionan claramente.
+10. **Asegurar** que se incluyan todos los aspectos críticos del negocio:
+    - **Gestión de productos**: Nombre, descripción, precio, stock, lotes.
+    - **Gestión de clientes**: Datos generales, precios especiales.
+    - **Gestión de pedidos**: Registro, estado, fechas, pagos.
+    - **Reportes y alertas**: Ventas, inventario bajo, clientes frecuentes.
+
+---
+
+## **4. Análisis de Claridad y Comprensión Técnica**
+11. **Evaluar** si la entrevista es comprensible tanto para desarrolladores como para el cliente final.
+12. **Verificar** si los términos técnicos están explicados de manera que un usuario no técnico pueda entenderlos.
+13. **Revisar** si las respuestas del cliente contienen redundancias innecesarias o pueden sintetizarse sin perder información.
+
+---
+
+## **5. Identificación de Posibles Omisiones**
+14. **Preguntar** si hay aspectos no considerados, como:
+    - Integración con sistemas externos (facturación, proveedores).
+    - Seguridad de los datos y acceso de usuarios.
+    - Opciones de exportación de reportes (PDF, Excel).
+    - Posible escalabilidad del sistema en el futuro.
+
+---
+
+## **6. Redacción de Ajustes y Propuesta de Mejora**
+15. **Hacer ajustes** en la redacción para mejorar la claridad y estructura.
+16. **Presentar** una versión mejorada a los responsables del proyecto para su validación.
+17. **Obtener retroalimentación** del cliente y de los técnicos antes de proceder a la etapa de diseño del sistema.
+
+---
