@@ -20,12 +20,13 @@ https://classroom.github.com/a/8x3Kkkoe
 1. **Leer** la redacción completa del caso de manera detallada.
 2. **Identificar** el propósito principal del sistema propuesto.
 3. **Determinar** los procesos clave que el sistema debe gestionar:
-   - Ventas
+   - POR EJEMPLO: Ventas
    - Inventario
    - Clientes
    - Pedidos
    - Pagos
    - Reportes
+   - OTROS
 
 ---
 
@@ -40,11 +41,11 @@ https://classroom.github.com/a/8x3Kkkoe
 ## **3. Validación de Requisitos Funcionales**
 8. **Extraer** de la redacción los requisitos explícitos e implícitos del sistema.
 9. **Comparar** los requisitos identificados con la estructura de la entrevista y validar que se mencionan claramente.
-10. **Asegurar** que se incluyan todos los aspectos críticos del negocio:
+10. **Asegurar** que se incluyan todos los aspectos críticos del negocio como por ejemplo:
     - **Gestión de productos**: Nombre, descripción, precio, stock, lotes.
     - **Gestión de clientes**: Datos generales, precios especiales.
     - **Gestión de pedidos**: Registro, estado, fechas, pagos.
-    - **Reportes y alertas**: Ventas, inventario bajo, clientes frecuentes.
+    - **Reportes y alertas**: Ventas, inventario bajo, clientes frecuentes. Y entre otras cuentas.
 
 ---
 
@@ -61,6 +62,8 @@ https://classroom.github.com/a/8x3Kkkoe
     - Seguridad de los datos y acceso de usuarios.
     - Opciones de exportación de reportes (PDF, Excel).
     - Posible escalabilidad del sistema en el futuro.
+    - Tecnologías de DBMS el cual interverna NoSQL, Bases de datos de linea de tiempo
+    - Otros cass
 
 ---
 
