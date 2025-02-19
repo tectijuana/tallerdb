@@ -15,6 +15,10 @@ https://classroom.github.com/a/8x3Kkkoe
 
 ----
 
+# **Procedimiento de Análisis para la Revisión de la Redacción del Caso: Sistema de Gestión de Ventas al Mayoreo de Mariscos**
+
+## **Objetivo**
+Garantizar que la redacción del caso refleje con precisión los requerimientos del cliente y sea clara para su posterior implementación técnica.
 
 ## **1. Análisis de Contexto y Comprensión del Caso**
 1. **Leer** la redacción completa del caso de manera detallada.
