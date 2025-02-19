@@ -29,6 +29,12 @@
 *Cliente*: Sería ideal integrar paneles solares en los edificios y monitorear cuánta energía se está generando y cómo se está usando. También nos gustaría incluir estaciones de carga para vehículos eléctricos, con monitoreo de su uso.
 
 ---
+## Promtp de inicializacion de la entrevista:
+
+> Imagina que eres el encargado de implementar un sistema para convertir un campus universitario en un "Smart Campus" enfocado en la sustentabilidad y la eficiencia energética. Quieres monitorear y optimizar el consumo de recursos como electricidad, agua y el uso de espacios, como salones y áreas comunes. El sistema debe registrar el consumo de electricidad por edificio y área, así como el consumo de agua en baños y áreas comunes. Además, se requiere que el sistema automatice el encendido y apagado de luces y dispositivos de ventilación en los salones inteligentes, con sensores de presencia para apagar los dispositivos cuando no haya nadie. El sistema debe incluir reportes semanales del consumo total de recursos, alertas de consumo anormal y recomendaciones para reducir el gasto. También debe integrar el monitoreo de la calidad del aire (como los niveles de CO₂), el seguimiento del uso de paneles solares y estaciones de carga para vehículos eléctricos. El objetivo es hacer el campus más eficiente, sostenible y automatizado.
+
+
+---
 
 **Resumen del Caso:**
 
