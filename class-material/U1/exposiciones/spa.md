@@ -1,8 +1,11 @@
-**Caso: Sistema de Reservas para un Spa Urbano**
+![tempImagewVJSED](https://github.com/user-attachments/assets/99318646-5992-478c-8a90-dc2ce825a9de)
+
+
+**Caso: Sistema de Reservas para Spa Urbano**
 
 **Entrevista con el cliente:**
 
-*Cliente*: Hola, necesito organizar las reservas y servicios de mi spa. Actualmente usamos un cuaderno para anotar las citas y ya se está volviendo muy complicado, especialmente en los días ocupados.
+*Cliente*: Hola, necesito organizar las reservas y servicios de mi spa. Actualmente usamos un cuaderno para anotar las citas y ya se está volviendo muy complicado, especialmente en los días ocupados. Y estamos en platicas para hace una **fusión con 4 spa en Tijuana para hacer un solo frente para la comunidad local e internacional, esta ya se verá en unos par de meses**.
 
 *Consultor*: Entendido. Cuénteme un poco más sobre cómo funcionan las reservas y qué tipo de servicios ofrecen.
 
@@ -24,7 +27,4 @@
 
 *Cliente*: Sí, algunos clientes compran paquetes de servicios con descuentos. Necesito poder registrar estos paquetes y llevar el control de cuántos servicios han usado y cuántos les quedan.
 
----
-
-Este caso es perfecto para practicar la creación de un modelo de base de datos que incluya tablas como *Clientes*, *Servicios*, *Empleados*, *Citas* y *Paquetes*. También permite explorar relaciones como la asignación de empleados a citas y la gestión de servicios incluidos en un paquete.
 
