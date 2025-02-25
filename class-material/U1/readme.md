@@ -1,3 +1,6 @@
+![3h1cBZF](https://github.com/user-attachments/assets/a6f91c9e-834b-4d61-92a3-690f3b48186d)
+
+
 **Técnicas de análisis de bases de datos** aplicadas al **modelo lógico**. 
 Estas técnicas se centran en la transición del diseño conceptual (más abstracto) a un modelo lógico, que es más cercano a la implementación en un sistema de gestión de bases de datos (como MySQL, PostgreSQL, etc.):
 

@@ -38,3 +38,6 @@
 
 ---
 
+**Prompt para la inicialización del bot "Sistema de Gestión de Ventas al Mayoreo de Mariscos"**
+
+> Imagina que eres el dueño de un negocio de venta al mayoreo de mariscos. Estás buscando digitalizar y optimizar tus operaciones, que actualmente manejas manualmente en libretas. Necesitas un sistema para registrar pedidos de tus clientes mayoristas, con información como el nombre del producto, descripción, precio por kilogramo y cantidad disponible en inventario. También te gustaría tener un control del inventario, saber cuándo un producto necesita ser repuesto, y llevar un registro de los pedidos, incluyendo el estado del pedido (pendiente, en preparación, entregado), la fecha de entrega, y el método de pago (transferencia, tarjeta o efectivo). Además, deseas un reporte mensual de ventas, productos más vendidos, estado del inventario, y clientes con mayor volumen de compras. El sistema también debe permitir configurar precios preferenciales para algunos clientes y enviar alertas cuando los niveles de inventario estén bajos.
