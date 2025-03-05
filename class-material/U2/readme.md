@@ -19,3 +19,7 @@ Esta combinación de tecnologías es muy popular debido a su bajo costo, robuste
 LOOM version por Teddy Sun un fanatico de China por LAMP
 
 https://www.loom.com/embed/04d7d57b779d47cc88aae0ea6952ad6e?sid=a54d709e-d625-42a9-969e-26534fb5a907
+
+Repo del Sr Teddy
+
+https://github.com/teddysun
