@@ -1,4 +1,7 @@
 
+
+<img width="821" alt="Screenshot 2024-03-17 at 13 42 45" src="https://github.com/user-attachments/assets/f9db5bad-fcca-42da-86c0-8797d8042396" />
+
 # Servicios LAMP
 
 # Introducción a LAMP
