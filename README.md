@@ -4,7 +4,8 @@
 
 ![DataByte Mascot](https://github.com/user-attachments/assets/d824217e-5b95-4071-a18a-6318cc256bcd)
 
-
+TableBot: https://chatgpt.com/g/g-Ir4EmYe0j-database-mentor
+---
 
 Repositorio oficial del curso **Taller de Bases de Datos**, impartido en el **TecNM Campus Instituto Tecnológico de Tijuana**. Este espacio está diseñado para organizar y compartir los recursos, tareas, y proyectos relacionados con el curso, promoviendo un aprendizaje práctico en el diseño, modelado y administración de bases de datos.
 
