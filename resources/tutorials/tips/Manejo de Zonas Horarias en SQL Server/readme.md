@@ -16,3 +16,7 @@ SELECT EmployeeId, RowStartTime,
             AT TIME ZONE 'Eastern Standard Time' AS datetime2(1))
             AS RowStartTimeLocal
 FROM   HumanResources.Employee FOR SYSTEM_TIME AS OF @asOfTime;
+
+```
+
+/rsr
