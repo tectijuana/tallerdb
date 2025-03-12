@@ -26,10 +26,6 @@ LOOM de como configurar VSCODE con la llave de AWS e instalar Ciberduck para sub
 - VSCODE https://code.visualstudio.com
 - AWS Academy https://www.awsacademy.com/vforcesite/LMS_Login
 
----
-
-Instalacion LAMP con soporte (2022), con PhpMyAdmin
-
 https://www.loom.com/share/dba54364e4cd4c6c93226ef04134fc7a?sid=f35a37ff-fec8-4a03-ae42-90cf196db9d9
 
 ---
