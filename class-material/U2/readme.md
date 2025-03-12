@@ -21,6 +21,7 @@ Repo del Sr Teddy
 https://github.com/teddysun
 
 LOOM de como configurar VSCODE con la llave de AWS e instalar Ciberduck para subir los archivos
+- Generador de BD relacionales basados el mockaroo es https://fabricate.mockaroo.com/databases/
 - Cyberduck https://cyberduck.io
 - Filezilla, Termius y otros soportan SFTP
 - VSCODE https://code.visualstudio.com
