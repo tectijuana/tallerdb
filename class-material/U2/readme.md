@@ -23,7 +23,7 @@ https://github.com/teddysun
 
 ----
 
-![Screenshot 2025-03-11 at 9 45 53 p m](https://github.com/user-attachments/assets/560f0a44-46c6-4e85-8404-9601754e2bef](https://cdn.cyberduck.io/img/cyberduck-icon-384.png)
+[![Screenshot 2025-03-11 at 9 45 53 p m](https://github.com/user-attachments/assets/560f0a44-46c6-4e85-8404-9601754e2bef](https://cdn.cyberduck.io/img/cyberduck-icon-384.png)](https://cdn.cyberduck.io/img/cyberduck-icon-384.png)
 
 # Mockaroo y su asistente Fabricate
 
