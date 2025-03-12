@@ -23,7 +23,7 @@ https://github.com/teddysun
 
 ----
 
-[![Screenshot 2025-03-11 at 9 45 53 p m](https://github.com/user-attachments/assets/560f0a44-46c6-4e85-8404-9601754e2bef](https://cdn.cyberduck.io/img/cyberduck-icon-384.png)](https://cdn.cyberduck.io/img/cyberduck-icon-384.png)
+[![Screenshot 2025-03-11 at 9 45 53 p m](https://github.com/user-attachments/assets/560f0a44-46c6-4e85-8404-9601754e2bef](https://cdn.cyberduck.io/img/cyberduck-icon-384.png)]
 
 # Mockaroo y su asistente Fabricate
 
@@ -48,7 +48,7 @@ NOTA: por si solo mockaroo no valida datos, para eso tenemos **fabricate** una e
 ---
 
 
-[https://cdn.cyberduck.io/img/cyberduck-icon-384.png![image](https://github.com/user-attachments/assets/885ae0a5-0636-4a6c-90aa-aaee7292263b)](https://cdn.cyberduck.io/img/cyberduck-icon-384.png)
+[https://cdn.cyberduck.io/img/cyberduck-icon-384.png![image](https://github.com/user-attachments/assets/885ae0a5-0636-4a6c-90aa-aaee7292263b)]
 
 Cyberduck es un cliente de transferencia de archivos (FTP/SFTP) y almacenamiento en la nube de código abierto. Es ampliamente utilizado para conectar y gestionar archivos en servidores remotos y servicios en la nube como Amazon S3, Google Drive, OneDrive, Dropbox, y más.
 
