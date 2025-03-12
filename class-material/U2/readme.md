@@ -38,16 +38,14 @@ Características principales de Mockaroo:
 - ✅ API para Datos Dinámicos: Tiene una API para solicitar datos en tiempo real desde una aplicación.
 
 Casos de uso
-🔹 Poblar bases de datos para pruebas de rendimiento.
-🔹 Crear datos de prueba para desarrollo sin comprometer información real.
-🔹 Simular escenarios en análisis de datos o machine learning.
-🔹 Generar datos de usuarios, productos, transacciones y más.
+- 🔹 Poblar bases de datos para pruebas de rendimiento.
+- 🔹 Crear datos de prueba para desarrollo sin comprometer información real.
+- 🔹 Simular escenarios en análisis de datos o machine learning.
+- 🔹 Generar datos de usuarios, productos, transacciones y más.
 
 NOTA: por si solo mockaroo no valida datos, para eso tenemos **fabricate** una extensión mas profesional para Uds.
 
-
-
-
+---
 
 LOOM de como configurar VSCODE con la llave de AWS e instalar Ciberduck para subir los archivos
 - Generador de BD relacionales basados el mockaroo es https://fabricate.mockaroo.com/databases/
