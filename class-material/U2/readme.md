@@ -31,11 +31,11 @@ Mockaroo es una herramienta en línea que permite generar datos simulados (fake 
 
 Características principales de Mockaroo:
 
-✅ Generación de Datos Realistas: Puedes crear conjuntos de datos con nombres, direcciones, correos electrónicos, fechas, números de teléfono, entre otros.
-✅ Formatos de Exportación: Permite descargar los datos en formatos como CSV, JSON, SQL, Excel y otros.
-✅ Campos Personalizables: Puedes definir qué tipo de datos necesitas y generar registros masivos de forma automática.
-✅ Integración con SQL: Puede generar sentencias INSERT para poblar bases de datos en MySQL, PostgreSQL, SQL Server, etc.
-✅ API para Datos Dinámicos: Tiene una API para solicitar datos en tiempo real desde una aplicación.
+- ✅ Generación de Datos Realistas: Puedes crear conjuntos de datos con nombres, direcciones, correos electrónicos, fechas, números de teléfono, entre otros.
+- ✅ Formatos de Exportación: Permite descargar los datos en formatos como CSV, JSON, SQL, Excel y otros.
+- ✅ Campos Personalizables: Puedes definir qué tipo de datos necesitas y generar registros masivos de forma automática.
+- ✅ Integración con SQL: Puede generar sentencias INSERT para poblar bases de datos en MySQL, PostgreSQL, SQL Server, etc.
+- ✅ API para Datos Dinámicos: Tiene una API para solicitar datos en tiempo real desde una aplicación.
 
 Casos de uso
 🔹 Poblar bases de datos para pruebas de rendimiento.
