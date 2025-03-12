@@ -49,7 +49,7 @@ NOTA: por si solo mockaroo no valida datos, para eso tenemos **fabricate** una e
 ---
 
 
-[https://cdn.cyberduck.io/img/cyberduck-icon-384.png![image](https://github.com/user-attachments/assets/885ae0a5-0636-4a6c-90aa-aaee7292263b)]
+![image](https://github.com/user-attachments/assets/885ae0a5-0636-4a6c-90aa-aaee7292263b)
 
 Cyberduck es un cliente de transferencia de archivos (FTP/SFTP) y almacenamiento en la nube de código abierto. Es ampliamente utilizado para conectar y gestionar archivos en servidores remotos y servicios en la nube como Amazon S3, Google Drive, OneDrive, Dropbox, y más.
 
@@ -68,8 +68,7 @@ Casos de uso:
 - 🔹 Conectar múltiples servicios de almacenamiento en un solo lugar.
 - 🔹 Editar archivos en servidores de forma remota sin descargarlos.
 
-
-
+---
 
 LOOM de como configurar VSCODE con la llave de AWS e instalar Ciberduck para subir los archivos
 - Generador de BD relacionales basados el mockaroo es https://fabricate.mockaroo.com/databases/
