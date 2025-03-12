@@ -23,7 +23,8 @@ https://github.com/teddysun
 
 ----
 
-[![Screenshot 2025-03-11 at 9 45 53 p m](https://github.com/user-attachments/assets/560f0a44-46c6-4e85-8404-9601754e2bef]
+![Screenshot 2025-03-11 at 9 45 53 p m](https://github.com/user-attachments/assets/58730816-c108-4f81-8c58-db4d414e3bd4)
+
 
 # Mockaroo y su asistente Fabricate
 
