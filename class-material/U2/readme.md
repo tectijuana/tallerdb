@@ -29,7 +29,8 @@ https://github.com/teddysun
 
 Mockaroo es una herramienta en línea que permite generar datos simulados (fake data) para pruebas y desarrollo. Es muy útil cuando necesitas poblar una base de datos con datos ficticios pero realistas, sin necesidad de ingresarlos manualmente.
 
-Características principales de Mockaroo
+Características principales de Mockaroo:
+
 ✅ Generación de Datos Realistas: Puedes crear conjuntos de datos con nombres, direcciones, correos electrónicos, fechas, números de teléfono, entre otros.
 ✅ Formatos de Exportación: Permite descargar los datos en formatos como CSV, JSON, SQL, Excel y otros.
 ✅ Campos Personalizables: Puedes definir qué tipo de datos necesitas y generar registros masivos de forma automática.
