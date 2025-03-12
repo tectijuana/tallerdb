@@ -16,10 +16,17 @@ LAMP es un acrónimo que representa una pila de tecnologías ampliamente utiliza
 Esta combinación de tecnologías es muy popular debido a su bajo costo, robustez y flexibilidad. En un taller de bases de datos, aprenderemos a configurar, administrar y utilizar un servidor LAMP para desarrollar aplicaciones que interactúan con bases de datos MySQL, creando, gestionando y consultando datos eficientemente.
 
 
-LOOM version por Teddy Sun un fanatico de China por LAMP
-
-https://www.loom.com/embed/04d7d57b779d47cc88aae0ea6952ad6e?sid=a54d709e-d625-42a9-969e-26534fb5a907
-
 Repo del Sr Teddy
 
 https://github.com/teddysun
+
+LOOM de como configurar VSCODE con la llave de AWS e instalar Ciberduck para subir los archivos
+- Cyberduck https://cyberduck.io
+- Filezilla, Termius y otros soportan SFTP
+- VSCODE https://code.visualstudio.com
+- AWS Academy https://www.awsacademy.com/vforcesite/LMS_Login
+
+Acceder a nodo con VSCode y subir archivos con CiberDuck
+https://www.loom.com/share/ed3e6ae8380b44288ac912a32e067baa?sid=1a5e7030-0141-4bf1-9edf-9dc4d43d0009
+
+----
