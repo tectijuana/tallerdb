@@ -16,7 +16,7 @@ LAMP es un acrónimo que representa una pila de tecnologías ampliamente utiliza
 Esta combinación de tecnologías es muy popular debido a su bajo costo, robustez y flexibilidad. En un taller de bases de datos, aprenderemos a configurar, administrar y utilizar un servidor LAMP para desarrollar aplicaciones que interactúan con bases de datos MySQL, creando, gestionando y consultando datos eficientemente.
 
 
-Repo del Sr Teddy
+# Repositorio y perfil del Sr Teddy
 
 https://github.com/teddysun
 
@@ -46,6 +46,29 @@ Casos de uso
 NOTA: por si solo mockaroo no valida datos, para eso tenemos **fabricate** una extensión mas profesional para Uds.
 
 ---
+
+
+https://cdn.cyberduck.io/img/cyberduck-icon-384.png![image](https://github.com/user-attachments/assets/885ae0a5-0636-4a6c-90aa-aaee7292263b)
+
+Cyberduck es un cliente de transferencia de archivos (FTP/SFTP) y almacenamiento en la nube de código abierto. Es ampliamente utilizado para conectar y gestionar archivos en servidores remotos y servicios en la nube como Amazon S3, Google Drive, OneDrive, Dropbox, y más.
+
+Características principales de Cyberduck:
+- ✅ Soporte para múltiples protocolos: Compatible con FTP, SFTP, WebDAV, Amazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure, Google Cloud Storage, Dropbox y OneDrive.
+- ✅ Interfaz intuitiva: Diseñado para ser fácil de usar con una navegación sencilla y soporte para arrastrar y soltar.
+- ✅ Seguridad avanzada: Soporta encriptación de datos y autenticación mediante claves SSH o credenciales almacenadas en Keychain (macOS) o Windows Credential Manager.
+- ✅ Editor de archivos en vivo: Permite editar archivos directamente en el servidor con tu editor de código favorito.
+- ✅ Sincronización y automatización: Funciona bien con herramientas como rsync y permite la sincronización de archivos entre servidores y nubes.
+- ✅ Gratis y de código abierto: Aunque ofrece una versión de donación, su funcionalidad completa es accesible sin costo.
+
+Casos de uso:
+- 🔹 Administrar servidores web mediante FTP/SFTP.
+- 🔹 Transferir archivos grandes a servicios en la nube.
+- 🔹 Gestionar backups en Amazon S3 o Google Drive.
+- 🔹 Conectar múltiples servicios de almacenamiento en un solo lugar.
+- 🔹 Editar archivos en servidores de forma remota sin descargarlos.
+
+
+
 
 LOOM de como configurar VSCODE con la llave de AWS e instalar Ciberduck para subir los archivos
 - Generador de BD relacionales basados el mockaroo es https://fabricate.mockaroo.com/databases/
