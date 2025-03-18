@@ -75,9 +75,9 @@ LOOM de como configurar VSCODE con la llave de AWS e instalar Ciberduck para sub
 - Cyberduck https://cyberduck.io
 - Filezilla, Termius y otros soportan SFTP
 - VSCODE https://code.visualstudio.com
-- AWS Academy https://www.awsacademy.com/vforcesite/LMS_Login
+- AWS Academy https://www.awsacademy.com/vforcesite/LMS_Login trabajaremos con **UBUNTU 22.LTS** (no versión 24, hubo eventos que invalidan una opcion)
 
-https://www.loom.com/share/dba54364e4cd4c6c93226ef04134fc7a?sid=f35a37ff-fec8-4a03-ae42-90cf196db9d9
+[https://www.loom.com/share/dba54364e4cd4c6c93226ef04134fc7a?sid=f35a37ff-fec8-4a03-ae42-90cf196db9d9](https://www.loom.com/share/c463ea940e5d40068fa3eafbdab39458?sid=bb48c9b5-fd0e-4085-85bd-3ff6ce4d8d5d)
 
 ---
 Acceder a nodo con VSCode y subir archivos con CyberDuck:
