@@ -18,7 +18,7 @@ Esta combinación de tecnologías es muy popular debido a su bajo costo, robuste
 
 # Repositorio y perfil del Sr Teddy
 
-https://github.com/teddysun
+https://github.com/teddysun  **Debe por el momento Ubuntu 22 LTS o DEBIAN ultima version**
 
 
 ----
