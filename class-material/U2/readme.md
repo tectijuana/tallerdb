@@ -69,22 +69,23 @@ Casos de uso:
 - 🔹 Editar archivos en servidores de forma remota sin descargarlos.
 
 ---
+# Herramientas para el modelo fisico, 
 
 LOOM de como configurar VSCODE con la llave de AWS e instalar Ciberduck para subir los archivos
-- Generador de BD relacionales basados el mockaroo es https://fabricate.mockaroo.com/databases/
-- Cyberduck https://cyberduck.io
-- Filezilla, Termius y otros soportan SFTP
-- VSCODE https://code.visualstudio.com
+- Generador de BD relacionales basados el mockaroo es https://fabricate.mockaroo.com
+- Cyberduck https://cyberduck.io (otras alternativas Filezilla, Termius y otros soportan SFTP)
+- VSCODE https://code.visualstudio.com con la extesión SSH
 - AWS Academy https://www.awsacademy.com/vforcesite/LMS_Login trabajaremos con **UBUNTU 22.LTS** (no versión 24, hubo eventos que invalidan una opcion)
 
 
 # AWSAcademy usar UBUNTU 22
 - 4 Gb RAM
-- Descargar el git de Teddy Sun via https://github.com/teddysun/lamp?tab=readme-ov-file#installation
+- Descargar el git de Teddy Sun via https://github.com/teddysun/lamp?tab=readme-ov-file#installation RECUERDE USAR UBUNTU 22 LTS o DEBIAN versión actual.
 - Comprobacion que funciono:
 [https://www.loom.com/share/dba54364e4cd4c6c93226ef04134fc7a?sid=f35a37ff-fec8-4a03-ae42-90cf196db9d9](https://www.loom.com/share/c463ea940e5d40068fa3eafbdab39458?sid=bb48c9b5-fd0e-4085-85bd-3ff6ce4d8d5d)
 
 ---
+
 Acceder a nodo con VSCode y subir archivos con CyberDuck:
 
 https://www.loom.com/share/ed3e6ae8380b44288ac912a32e067baa?sid=1a5e7030-0141-4bf1-9edf-9dc4d43d0009
