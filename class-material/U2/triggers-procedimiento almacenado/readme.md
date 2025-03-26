@@ -81,9 +81,7 @@ UPDATE Libros SET cantidad = 15 WHERE id_libro = 1;
 Sube a a Idoceo Connect el GIST (de preferencia con markdown) con tu investigación, tabla comparativa y capturas de pantalla de los ejemplos prácticos funcionando en una base de datos relacional real.
 
 ### Criterios de Evaluación:
-- Claridad en las definiciones y tabla comparativa (40%)
-- Correcta implementación y funcionamiento de los ejemplos (40%)
-- Presentación clara y ordenada del documento (20%)
+![Screenshot 2025-03-25 at 5 17 16 p m](https://github.com/user-attachments/assets/38268a1d-7f1a-4b3e-b850-ef1836e176e4)
 
 ¡Éxito! 🚀📚
 
