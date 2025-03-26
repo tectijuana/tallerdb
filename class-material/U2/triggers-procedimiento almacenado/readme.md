@@ -1,3 +1,8 @@
+![Screenshot 2025-03-25 at 9 09 56 p m](https://github.com/user-attachments/assets/4b49989a-12a8-4cbb-9590-4723b411da46)
+
+
+
+
 # **Actividad: Investigación y Aplicación de Triggers y Procedimientos Almacenados**
 
 ### Objetivos:
