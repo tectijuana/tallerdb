@@ -78,7 +78,7 @@ UPDATE Libros SET cantidad = 15 WHERE id_libro = 1;
 ---
 
 ### Entrega:
-Sube a la plataforma educativa un documento PDF con tu investigación, tabla comparativa y capturas de pantalla de los ejemplos prácticos funcionando en una base de datos relacional real.
+Sube a a Idoceo Connect el GIST (de preferencia con markdown) con tu investigación, tabla comparativa y capturas de pantalla de los ejemplos prácticos funcionando en una base de datos relacional real.
 
 ### Criterios de Evaluación:
 - Claridad en las definiciones y tabla comparativa (40%)
