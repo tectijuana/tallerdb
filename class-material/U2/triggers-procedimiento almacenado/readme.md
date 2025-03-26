@@ -1,6 +1,7 @@
-![Screenshot 2025-03-25 at 9 09 56 p m](https://github.com/user-attachments/assets/4b49989a-12a8-4cbb-9590-4723b411da46)
 
-
+<p align="center">
+  <img src="[https://ejemplo.com/imagen.png](https://github.com/user-attachments/assets/4b49989a-12a8-4cbb-9590-4723b411da46)" alt="Ilustración medieval de Tux programando" width="500"/>
+</p>
 
 
 # **Actividad: Investigación y Aplicación de Triggers y Procedimientos Almacenados**
