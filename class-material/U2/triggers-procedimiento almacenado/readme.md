@@ -1,4 +1,4 @@
-**Actividad: Investigación y Aplicación de Triggers y Procedimientos Almacenados**
+# **Actividad: Investigación y Aplicación de Triggers y Procedimientos Almacenados**
 
 ### Objetivos:
 - Investigar y comprender qué son los triggers y procedimientos almacenados en bases de datos relacionales.
