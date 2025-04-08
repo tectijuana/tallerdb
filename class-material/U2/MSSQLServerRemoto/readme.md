@@ -16,7 +16,7 @@
 1. Cuenta activa de AWS Academy.
 2. SQL Server Management Studio (SSMS) instalado en equipo local.
 3. Cuenta gratuita de LOOM.
-4. Acceso a [http://checkmyip.com](http://checkmyip.com) para obtener IP externa.
+4. Acceso a [http://WhatsMyIp.com](http://[whatsismyip](https://www.whatismyip.com) para obtener IP externa.
 5. Acceso a [http://fabricate.mockaroo.com](http://fabricate.mockaroo.com) para generar datos ficticios.
 
 ---
@@ -25,8 +25,8 @@
 
 ### 1. Crear instancia EC2 con Windows Server y SQL Server
 
-- **AMI sugerida:** Microsoft Windows Server 2019 Base with SQL Server Express.
-- **Tipo de instancia:** t2.medium o superior.
+- **AMI sugerida:** Microsoft Windows Server 2022 Base with SQL Server Web.
+- **Tipo de instancia:** t2.medium o superior con 8 Gb RAM
 - **Almacenamiento:** mínimo 30 GB (C:).
 - **Nombre de clave (key pair):** generar uno nuevo o reutilizar existente para RDP.
 - **Grupo de seguridad:**
@@ -36,7 +36,7 @@
 
 ### 2. Conectar por RDP a la instancia
 
-- Descargar archivo `.rdp` desde AWS Console.
+- **Descargar archivo `.rdp`** desde AWS Console.
 - Usar contraseña de administrador obtenida mediante clave PEM.
 
 ### 3. Habilitar SQL Server para conexiones remotas
@@ -68,7 +68,7 @@ Dentro del servidor (vía RDP):
 
 ### 5. Configurar IP del cliente en el Security Group
 
-- Ir a [http://checkmyip.com](http://checkmyip.com) en su computadora local.
+- Ir a checar la ip en su computadora local.
 - Copiar IP pública.
 - En el **Security Group** de EC2:
   - Editar Inbound Rules → Agregar TCP 1433 desde la IP obtenida (formato: `X.X.X.X/32`).
@@ -87,13 +87,13 @@ Dentro del servidor (vía RDP):
 
 ## 🎥 Entrega de Video en LOOM
 
-**Contenido mínimo del video (3-5 minutos):**
+**Contenido mínimo del video (1 hasta 5 minutos):**
 1. Acceso a la instancia EC2 vía RDP.
 2. Vista de base de datos y datos ficticios en SSMS (dentro del servidor).
 3. Configuración del firewall con IP pública.
 4. Conexión desde SSMS en su PC local.
 5. Ejecución de una consulta.
-6. Mostrar página [checkmyip.com] para validar IP.
+6. Mostrar para validar IP.
 
 ---
 
