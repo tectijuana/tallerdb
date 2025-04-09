@@ -1,6 +1,7 @@
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5727913.png" width="511" height="99" alt="Investigación" /></a>
 <br />Image by <a href="https://cooltext.com">Cool Text: Free Graphics Generator</a> - <a href="https://cooltext.com/Edit-Logo?LogoID=4801693220">Edit Image</a>
 
+# Utilice jetbrains.com DataGrip y/o  SQL Server Manager Studio para acceder a el servidor AWS-MSServer Remoto 1433/tcp para comunicarse con SQL Server 2022 
 
 # 🧑‍🏫 Lección: Implementación de Windows Server en AWS EC2 con SQL Server y Consulta Remota desde Cliente Local
 
@@ -112,4 +113,3 @@ Dentro del servidor (vía RDP):
 
 ---
 
-# Utilice jetbrains.com DataGrip y/o  SQL Server Manager Studio para acceder a el servidor AWS-MSServer Remoto 1433/tcp para comunicarse con SQL Server 2022 
