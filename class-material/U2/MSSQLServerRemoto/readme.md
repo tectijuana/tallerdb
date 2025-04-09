@@ -6,14 +6,11 @@
 # 🧑‍🏫 Lección: Implementación de Windows Server en AWS EC2 con SQL Server y Consulta Remota desde Cliente Local
 
 ### 🎯 Objetivos de Aprendizaje (Learning Objectives)
-- Implementar una instancia EC2 con Windows Server y SQL Server.
-- Importar datos ficticios desde Mockaroo.
-- Configurar SQL Server para acceso remoto.
-- Configurar reglas de seguridad (firewall) en AWS para permitir acceso desde IP externa.
-- Realizar una conexión remota desde SQL Server Management Studio (SSMS) en su PC local.
-- Documentar el proceso en una grabación con LOOM.
 
----
+✅ **AWS EC2** (configuración de instancias, reglas de seguridad, puertos, RDP, etc.)  
+✅ **Microsoft SQL Server 2022 Web Edition** (configuración, autenticación, puertos, TCP/IP, acceso remoto)  como server EC2 en AWS
+✅ **JetBrains DataGrip** o MS Manager Studio (configuración de conexiones, drivers, autenticación, SSL, etc.)   como cliente
+✅ **Conexión de cliente remoto (PC del DBA)** a un servidor SQL en la nube
 
 ## 🧰 Requisitos Previos
 
@@ -22,6 +19,21 @@
 3. Cuenta gratuita de LOOM.
 4. Acceso a [http://WhatsMyIp.com](http://[whatsismyip](https://www.whatismyip.com) para obtener IP externa.
 5. Acceso a [http://fabricate.mockaroo.com](http://fabricate.mockaroo.com) para generar datos ficticios.
+
+-
+## Generales
+1. ✅ Configurar la **instancia EC2 en AWS** con Windows Server y SQL Server 2022 Web.
+2. ✅ Asegurarte que **SQL Server acepte conexiones remotas** (activación de TCP/IP, puertos, autenticación).
+3. ✅ Configurar el **grupo de seguridad en AWS** para abrir el puerto 1433/TCP desde tu IP.
+4. ✅ Verificar que el **Firewall de Windows** permita el tráfico externo en 1433.
+5. ✅ Crear y probar un usuario de SQL Server para autenticación (si usas SQL Auth).
+6. ✅ Conectar desde **JetBrains DataGrip**, usando correctamente el driver de SQL Server.
+
+Si ya tienes la instancia activa y necesitas conectar desde DataGrip, dime:
+
+- ¿Tienes la IP pública o DNS de la instancia?  
+- ¿Ya habilitaste el puerto 1433 en AWS y en el firewall de Windows?  
+- ¿Tienes un usuario y contraseña válidos de SQL Server?
 
 ---
 ```mermaid
@@ -74,21 +86,7 @@ Dentro del servidor (vía RDP):
 
 ### 4. Crear base de datos y cargar datos ficticios
 
-- Desde [http://fabricate.mockaroo.com](http://fabricate.mockaroo.com):
-  - Diseñar un esquema (ej. `clientes`, `ventas`, etc.).
-  - Descargar en formato `.csv`.
-- En SSMS (dentro del servidor):
-  - Crear base de datos: `CREATE DATABASE DemoDB;`
-  - Crear tablas e importar CSV:
-    ```sql
-    BULK INSERT DemoDB.dbo.Clientes
-    FROM 'C:\Users\Administrator\Downloads\clientes.csv'
-    WITH (
-        FIELDTERMINATOR = ',',
-        ROWTERMINATOR = '\n',
-        FIRSTROW = 2
-    );
-    ```
+Aqui se asume que una de las practicas de LLM que tiene en fabricate para reusarla, estamos probando la conexión.
 
 ### 5. Configurar IP del cliente en el Security Group
 
@@ -99,12 +97,12 @@ Dentro del servidor (vía RDP):
 
 ### 6. Conectarse desde SSMS en la computadora local
 
-- Abrir SSMS.
+- Abrir SSMS o Datagrip.
 - En "Server name": `X.X.X.X,1433` (IP pública de la EC2).
 - Autenticación: SQL Server Authentication (crear login en SQL Server si no se usa el de Windows).
 - Verificar acceso y ejecutar consulta de prueba:
   ```sql
-  SELECT TOP 10 * FROM DemoDB.dbo.Clientes;
+  SELECT TOP 10 * FROM DemoDB.dbo.Clientes; # segun sea el caso
   ```
 
 ---
@@ -117,8 +115,8 @@ Dentro del servidor (vía RDP):
 4. Conexión desde SSMS y/o DataGrip en su PC local.
 5. Ejecución de una consulta.
 6. Mostrar para validar IP de su estacion.
-   NOTA: Ud. logro accceder a cualquier server SQL del mundo y trabajar desde su PC
-   ¿Que paso con los formularios, etc? estos estaran en el servidor via Aplicacion Web de ASP.net c#
+   NOTA: Ud. logró accceder a cualquier server SQL del mundo y trabajar desde su PC
+   ¿Que paso con los formularios, etc? estos estaran en el servidor via Aplicacion Web de ASP.net C#
 
 ---
 
@@ -126,10 +124,9 @@ Dentro del servidor (vía RDP):
 
 | Criterio                        | Peso |
 |-------------------------------|------|
-| Instancia funcional            | 20%  |
-| Importación de datos correcta | 20%  |
+| Instancia funcional            | 20%  ||
 | Configuración de red segura   | 20%  |
-| Conexión remota exitosa       | 20%  |
+| Conexión remota exitosa       | 40%  |
 | Entrega clara en LOOM         | 20%  |
 
 ---
