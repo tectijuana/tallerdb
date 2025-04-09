@@ -96,8 +96,9 @@ Dentro del servidor (vía RDP):
 2. Configuración del firewall con IP pública.
 4. Conexión desde SSMS y/o DataGrip en su PC local.
 5. Ejecución de una consulta.
-6. Mostrar para validar IP.
-   
+6. Mostrar para validar IP de su estacion.
+   NOTA: Ud. logro accceder a cualquier server SQL del mundo y trabajar desde su PC
+   ¿Que paso con los formularios, etc? estos estaran en el servidor via Aplicacion Web de ASP.net c#
 
 ---
 
