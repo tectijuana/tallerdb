@@ -24,6 +24,26 @@
 5. Acceso a [http://fabricate.mockaroo.com](http://fabricate.mockaroo.com) para generar datos ficticios.
 
 ---
+```mermaid
+flowchart LR
+    subgraph Local
+        A((Usuario-DBA PC local)) --> B[Abre JetBrains DataGrip y/o SQL Server Management Studio]
+    end
+
+    subgraph Remoto_en_AWS
+        G[SQL Server 2022 Windows Server 2022 Instancia EC2]
+    end
+
+    B --> C[Indica IP o DNS público puerto 1433/tcp MSSQL]
+    C --> D[Verifica reglasSecurity Group y Firewall]
+    D --> E[Selecciona autenticación:SQL o Windows]
+    E --> F{¿Conexión exitosa?}
+    F -- Sí --> G
+    F -- No --> H[Revisar red, firewall o credenciales, certificados]
+
+    A -.-> I[Misión: Trabajar desde la estación del DBA hacia el servidor SQL remoto en AWS]
+```
+---
 
 ## 🪜 Paso a Paso
 
