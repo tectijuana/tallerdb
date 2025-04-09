@@ -114,3 +114,30 @@ Dentro del servidor (vía RDP):
 
 ---
 
+Para conectar JetBrains DataGrip o SQL Server Management Studio (SSMS) a una instancia de SQL Server 2022 en AWS (corriendo sobre Windows Server 2022 con SQL Server 2022 Web), se puede contemplar lo siguiente:
+
+• **Configuración en AWS**  
+   - Verificar que el puerto 1433/TCP esté abierto en el grupo de seguridad (Security Group) asociado a la instancia de Windows Server 2022, habilitando las reglas de entrada (inbound rules) para permitir conexiones entrantes en el puerto 1433.  
+   - Anotar la dirección IP pública o el DNS público de la instancia de Windows Server. Esa información se muestra en el panel de EC2, en la sección de “Description”, como “Public DNS” o “Elastic IP” (en caso de estar asignada).
+
+• **Acceso por SQL Server Management Studio (SSMS)**  
+   - En “Server name” o “Nombre del servidor” se ingresa la IP o DNS público seguido del puerto (si fuera necesario especificarlo explícitamente). Por ejemplo: `mi-direccion-publica:1433`.  
+   - Seleccionar el tipo de autenticación correspondiente (SQL Server Authentication o Windows Authentication si hay un dominio/Active Directory con VPN).  
+   - Ingresar las credenciales del usuario de SQL Server habilitado para conexiones remotas.  
+   - Asegurarse en las propiedades de SQL Server (a través de SQL Server Configuration Manager en la instancia remota) que “TCP/IP” esté habilitado y configurado para el puerto 1433.
+
+• **Acceso por JetBrains DataGrip**  
+   - En DataGrip, dentro de “Database Explorer” -> “Data Sources and Drivers”, crear una nueva conexión de tipo “Microsoft SQL Server”.  
+   - En “Host” colocar la dirección pública o el DNS de la instancia. En “Port” colocar 1433.  
+   - En “Database” se puede dejar en blanco para que muestre todas las disponibles, o colocar directamente la base de datos predeterminada.  
+   - Seleccionar el tipo de autenticación (generalmente “User & Password” para SQL Server Authentication).  
+   - Habilitar la casilla de “SSL” si fuera necesario (por ejemplo, si el servidor está configurado con un certificado SSL/TLS).  
+   - Probar la conexión y, si es correcto, DataGrip indicará “Successful”.
+
+• **Consideraciones adicionales**  
+   - Comprobar que el firewall de Windows en la instancia de AWS no bloquee el puerto 1433.  
+   - Revisar las propiedades de la instancia de SQL Server para que acepte conexiones remotas (se configura en “SQL Server Network Configuration” habilitando “TCP/IP”).  
+   - En SQL Server Management Studio se puede verificar la autenticación mixta (Windows y SQL Server logins) en las propiedades del servidor, opción “Security”.  
+   - Asegurarse de tener las credenciales del usuario sa (o el usuario de SQL Server habilitado) que cuente con los permisos adecuados para conectarse remotamente.
+
+De esa forma tanto JetBrains DataGrip como SQL Server Management Studio podrán establecer la conexión con SQL Server 2022 que se encuentra en la instancia de AWS.
