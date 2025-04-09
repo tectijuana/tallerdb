@@ -93,11 +93,11 @@ Dentro del servidor (vía RDP):
 
 **Contenido mínimo del video (1 hasta 5 minutos):**
 1. Acceso a la instancia EC2 vía RDP.
-2. Vista de base de datos y datos ficticios en SSMS (dentro del servidor).
-3. Configuración del firewall con IP pública.
-4. Conexión desde SSMS en su PC local.
+2. Configuración del firewall con IP pública.
+4. Conexión desde SSMS y/o DataGrip en su PC local.
 5. Ejecución de una consulta.
 6. Mostrar para validar IP.
+   
 
 ---
 
