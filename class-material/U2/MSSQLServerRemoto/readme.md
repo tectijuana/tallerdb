@@ -1,3 +1,6 @@
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5727913.png" width="511" height="99" alt="Investigación" /></a>
+<br />Image by <a href="https://cooltext.com">Cool Text: Free Graphics Generator</a> - <a href="https://cooltext.com/Edit-Logo?LogoID=4801693220">Edit Image</a>
+
 
 # 🧑‍🏫 Lección: Implementación de Windows Server en AWS EC2 con SQL Server y Consulta Remota desde Cliente Local
 
