@@ -158,3 +158,65 @@ Para conectar JetBrains DataGrip o SQL Server Management Studio (SSMS) a una ins
    - Asegurarse de tener las credenciales del usuario sa (o el usuario de SQL Server habilitado) que cuente con los permisos adecuados para conectarse remotamente.
 
 De esa forma tanto JetBrains DataGrip como SQL Server Management Studio podrán establecer la conexión con SQL Server 2022 que se encuentra en la instancia de AWS.
+
+---
+# SOPORTE TECNICO
+
+Para solucionar problemas de conectividad con Windows Server 2022 y SQL Server 2022 en una instancia de AWS EC2, puedes revisar los siguientes puntos:
+
+1. **Revisar Reglas de Seguridad en AWS (Security Groups)**  
+   - Verifica que el Security Group asociado a tu instancia EC2 tenga reglas de entrada (Inbound Rules) que permitan el tráfico en el puerto TCP asociado a SQL Server (por defecto 1433) y que permitan también el tráfico en el puerto RDP (por defecto 3389) si necesitas acceso remoto a la instancia.
+   - Asegúrate de que la dirección IP de origen (o rango de IP) esté correctamente configurada para el acceso que necesites.
+
+2. **Revisar la Configuración de la VPC y Subnet**  
+   - Confirma que la subred (Subnet) en la que se ubica la instancia EC2 está configurada para permitir tráfico de entrada/salida según tus necesidades.
+   - Si requieres conectarte a la base de datos desde Internet, verifica que cuentes con una IP elástica (Elastic IP) asignada y enlazada a la instancia (o algún NAT Gateway o Load Balancer correctamente configurado).
+
+3. **Firewall de Windows Server**  
+   - En la instancia de Windows Server, revisa el Firewall de Windows para asegurarte de que las reglas de entrada para SQL Server estén habilitadas (puerto 1433 por defecto) y, si aplica, para el SQL Browser en UDP 1434.
+   - Si usas un puerto diferente al 1433, debes ajustar la regla de firewall de forma acorde.
+
+4. **Configuración de SQL Server**  
+   - Asegúrate de que la instancia de SQL Server esté configurada para aceptar conexiones remotas. Para verificarlo:
+     1. En **SQL Server Configuration Manager** → **SQL Server Network Configuration** → **Protocols for <TuInstancia>**, confirma que el protocolo **TCP/IP** esté habilitado.
+     2. Dentro de **TCP/IP** (en las propiedades), comprueba que tengas un puerto estático configurado (por ejemplo, 1433) y que no esté en dinámico (a menos que uses el SQL Browser y un firewall configurado para ello).
+     3. Revisa que **SQL Server Services** estén corriendo con la cuenta adecuada y con permisos suficientes.
+
+5. **Verificar la Cadena de Conexión**  
+   - Cuando te conectes desde otro equipo (local u otra instancia de EC2), asegúrate de usar la cadena de conexión adecuada:  
+     ```
+     Server=<IP_Pública_Instancia>,1433;Database=<TuBase>;User Id=<Usuario>;Password=<Contraseña>;
+     ```
+   - Si se trata de una conexión interna dentro de la misma VPC, utiliza la dirección IP privada o el nombre DNS interno que AWS asigna a la instancia.
+
+6. **Puertos Adicionales y Antivirus**  
+   - Si cuentas con antivirus, revisa que no esté bloqueando la comunicación en esos puertos.
+   - Asegúrate de no tener software adicional que intercepte el tráfico de red (por ejemplo, VPNs mal configuradas).
+
+7. **Diagnóstico con Herramientas**  
+   - Desde un cliente remoto, haz un **ping** a la IP pública (o privada si es intra-VPC) de la instancia. Si no responde, revisa la configuración de ICMP (seguridad y firewall) para ver si está bloqueado.
+   - Usa **telnet** (o PowerShell con Test-NetConnection) para confirmar que el puerto 1433 está accesible:
+     ```
+     telnet <IP_del_Servidor> 1433
+     ```
+     o
+     ```
+     Test-NetConnection -ComputerName <IP_del_Servidor> -Port 1433
+     ```
+     Si marca falla, tienes un bloqueo en seguridad o firewall.
+   - Verifica los logs de SQL Server (SQL Server Logs y Event Viewer de Windows) para descartar errores de servicio o de autenticación.
+
+8. **Credenciales y Permisos**  
+   - Asegúrate de que las credenciales de SQL Server que usas tengan los permisos adecuados para conectarse desde un cliente remoto.
+   - Si usas **Autenticación Windows**, confirma que tengas un **Active Directory** (o el equivalente local) configurado y la comunicación esté habilitada.
+
+9. **Otras Opciones de Conexión**  
+   - Considera el uso de **VPN** Site-to-Site o AWS Direct Connect si necesitas una conexión más segura y directa entre tu red corporativa y tu instancia en AWS.
+   - Revisa si necesitas configurar un **Bastion Host** o un **Remote Desktop Gateway** para acceder de forma segura.
+
+Si después de revisar estos puntos aún encuentras inconvenientes, se sugiere:
+- Consultar los logs detallados de SQL Server para ver cualquier mensaje de error específico.
+- Revisar el visor de eventos de Windows para detectar problemas de red, fallos de autenticación o eventos de firewall.
+- Confirmar que no existan políticas de grupo (GPO) que bloqueen puertos o protocolos.
+
+Estos pasos abarcan los principales puntos de falla en la conectividad. Si requieres asistencia aún más personalizada, podría ser necesario revisar tu configuración específica en AWS, la instancia de Windows y la configuración avanzada de SQL Server.
