@@ -3,6 +3,7 @@
 
 ![Azure](https://github.com/user-attachments/assets/e65bda34-e5f2-4435-be30-a85a601b5c5e)
 
+Fecha: 10/abril
 # 30 Prácticas Tematizadas de SQL Server en AWS para Estudiantes Universitarios
 
 Todas las prácticas a continuación están diseñadas para un entorno **SQL Server Web Edition en AWS**, accesible mediante **SQL Server Management Studio (SSMS)** o **DataGrip**. Cada práctica está pensada para completarse en **dos sesiones de laboratorio de 1 hora**. Las actividades cubren tanto **consultas SQL** (SELECT, JOIN, subconsultas, *triggers*, etc.) como aspectos básicos de **administración de bases de datos** (creación de usuarios, respaldos, vistas, etc.), en contextos de escenarios **reales y atractivos**. Se incluyen **al menos 3 prácticas con TRIGGERS**. A continuación se presenta la lista de las 30 prácticas con su título, escenario y objetivos de aprendizaje específicos:
