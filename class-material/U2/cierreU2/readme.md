@@ -99,7 +99,7 @@ Volviendo a la base de datos de la **biblioteca**, los estudiantes ahora realiza
 - Utilizar `UPDATE` con `WHERE` para modificar ciertos campos de uno o varios registros existentes (por ej., actualizar el stock de copias de un libro), teniendo cuidado de no afectar filas incorrectas.
 - Emplear `DELETE` con condiciones para remover registros específicos sin eliminar datos inadvertidamente (por ej., borrar un libro por ID) y comprender el impacto de borrar datos que puedan tener relaciones (p.e., qué ocurre si existieran préstamos asociados a ese libro, destacando la importancia de la integridad referencial).
 
-## Práctica 14: Banco – Transacciones y atomicidad en operaciones (transferencia de fondos)
+## Práctica 14: Banco – Transacciones y transferencia de fondos.
 En el entorno del **banco**, esta práctica introduce el concepto de **transacción** para asegurar operaciones atómicas. Se plantea el ejemplo de una **transferencia bancaria** entre dos cuentas: se debe debitar un monto de una cuenta y acreditarlo en otra. Los estudiantes implementarán esta lógica usando comandos de transacción (`BEGIN TRAN`, `COMMIT`, `ROLLBACK`) de forma que ambas operaciones ocurran como una sola unidad (o se deshacen en caso de error). Se simularán casos como una interrupción que obliga a un rollback para proteger la integridad financiera.  
 **Objetivos de aprendizaje:**
 - Entender el concepto de **ACID** y atomicidad: utilizar **transacciones** para agrupar múltiples sentencias `UPDATE/INSERT` de modo que se confirmen todas o ninguna (all-or-nothing).
