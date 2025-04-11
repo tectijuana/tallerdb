@@ -94,6 +94,49 @@ ansible-playbook deploy_sqlserver_local.yml
         name: mssql-server
         enabled: yes
         state: started
+    - name: Instalar herramientas de línea de comando de SQL Server
+      block:
+        - name: Agregar repositorio de mssql-tools
+          shell: |
+            curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+            sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/20.04/prod.list)"
+          args:
+            executable: /bin/bash
+
+        - name: Instalar mssql-tools y dependencias
+          apt:
+            name:
+              - mssql-tools
+              - unixodbc-dev
+            state: present
+            update_cache: yes
+
+        - name: Añadir mssql-tools al PATH
+          lineinfile:
+            path: ~/.bashrc
+            line: 'export PATH="$PATH:/opt/mssql-tools/bin"'
+            insertafter: EOF
+            state: present
+
+        - name: Recargar PATH
+          shell: source ~/.bashrc
+          args:
+            executable: /bin/bash
+
+    - name: Crear base de datos y tabla con datos de ejemplo
+      shell: |
+        /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '{{ sa_password }}' -Q "
+        CREATE DATABASE Escuela;
+        USE Escuela;
+        CREATE TABLE Alumnos (
+          id INT PRIMARY KEY,
+          nombre NVARCHAR(50),
+          edad INT
+        );
+        INSERT INTO Alumnos VALUES (1, 'Ana Pérez', 20);
+        SELECT * FROM Alumnos;"
+      args:
+        executable: /bin/bash
 ```
 
 ---
