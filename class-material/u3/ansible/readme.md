@@ -126,8 +126,8 @@ ansible-playbook deploy_sqlserver_local.yml
     - name: Crear base de datos y tabla con datos de ejemplo
       shell: |
         /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '{{ sa_password }}' -Q "
-        CREATE DATABASE Escuela;
-        USE Escuela;
+        CREATE DATABASE TecDb;
+        USE TecDb;
         CREATE TABLE Alumnos (
           id INT PRIMARY KEY,
           nombre NVARCHAR(50),
