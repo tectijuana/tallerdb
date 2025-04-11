@@ -1,5 +1,16 @@
+# Requisitos previos
 
+Este playbook está listo para que cualquier estudiante:
 
+- Lance una EC2 Ubuntu 20.04 con acceso SSH.
+- Instale Ansible
+- Ejecute el playbook con:
+```bash
+sudo apt install ansible -y
+
+wget URL_De_donde_esta_el_script
+ansible-playbook deploy_sqlserver_local.yml
+```
 
 ##  Setup completo y despliegue de MS SQL Server en localhost `deploy_sqlserver_local.yml`
 
@@ -86,13 +97,5 @@
 ```
 
 ---
-
-Este playbook está listo para que cualquier estudiante:
-1. Lance una EC2 Ubuntu 20.04 con acceso SSH.
-2. Instale Ansible (`sudo apt install ansible -y`)
-3. Ejecute el playbook con:  
-```bash
-ansible-playbook deploy_sqlserver_local.yml
-```
 
 ¿Quieres que prepare una guía corta (`README.md`) estilo "paso a paso para alumnos"? 📄✨
