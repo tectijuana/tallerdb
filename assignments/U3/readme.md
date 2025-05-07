@@ -1,3 +1,8 @@
+![output](https://github.com/user-attachments/assets/0c73ba94-525a-4bfd-91cc-bb5f72e9983b)
+![ChatGPT Image May 6, 2025 at 05_20_51 PM](https://github.com/user-attachments/assets/f1dadc89-7b47-4787-9e21-330df95e65a4)
+
+
+
 | 🖥️ Monitor # | 🧠 Nombre de la práctica                                    | 🎯 Objetivo General                                                                                                                       | 📚 Contexto temático                                                                                |
 |--------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | 1            | Guardianes del Estadio: Monitoreo de Impactos y Temperatura | Diseñar una red de micro:bits que simulen sensores en cascos de jugadores para detectar impactos y temperatura y enviar datos a InfluxDB. | Simulación de un estadio inteligente con estudiantes como técnicos monitoreando salud de jugadores. |
