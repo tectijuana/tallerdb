@@ -175,8 +175,9 @@ Content-Type: application/json
 ```
 
 ---
+# 📁 Código para el archivo flask_api.service
 
-## 🧾 Consulta en MongoDB desde EC2
+## Crea este archivo en /etc/systemd/system/flask_api.service:
 
 ```bash
 mongosh
@@ -184,6 +185,63 @@ use iot_pico
 db.lecturas_iot.find().pretty()
 ```
 
+
+📁 Código para el archivo flask_api.service
+
+```bash
+[Unit]
+Description=Flask API para Pico W y MongoDB
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/flask_api
+ExecStart=/usr/bin/python3 /home/ubuntu/flask_api/server.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
 ```
 
+⚠️ Asegúrate de que el script esté en /home/ubuntu/flask_api/server.py o cambia la ruta en ExecStart.
+
+---
+
+En Resumen:
+Claro, aquí te muestro cómo debería verse el árbol de directorios (`$ tree`) del proyecto completo en tu servidor EC2 para que todo funcione correctamente:
+
+```bash
+/home/ubuntu/flask_api/
+├── server.py                # Código del servidor Flask
+├── requirements.txt         # Lista de dependencias Python
+├── flask_api.service        # Archivo .service opcional (copia de referencia)
+└── README.md                # Documentación del proyecto
 ```
+
+Y el `.service` real debe estar en:
+
+```bash
+/etc/systemd/system/
+└── flask_api.service        # Servicio de systemd que ejecuta Flask automáticamente
+```
+
+---
+
+### 📄 Ejemplo de `requirements.txt`
+
+Colócalo en `/home/ubuntu/flask_api/requirements.txt` para instalar dependencias fácilmente:
+
+```txt
+flask
+pymongo
+flask-cors
+```
+
+Instalas con:
+
+```bash
+cd /home/ubuntu/flask_api
+pip3 install -r requirements.txt
+```
+
+---
