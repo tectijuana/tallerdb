@@ -1,6 +1,6 @@
 
 
-![20250508_0555_Smart Lab Connectivity_simple_compose_01jtqzb97rfrh8wjcsh8rgjapt](https://github.com/user-attachments/assets/7fe13072-f6b0-40c4-9be8-0edc9e153149)
+<img width="1463" alt="Screenshot 2025-05-07 at 5 31 42 p m" src="https://github.com/user-attachments/assets/ed4796d3-23a5-4663-94cc-74704fc1bd90" />
 
 # Monitoreo Ambiental Inteligente con Pico W y MongoDB
 
