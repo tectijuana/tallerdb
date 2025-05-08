@@ -1,7 +1,6 @@
-Perfecto. Voy a estructurar todo el contenido como una guía de práctica de cierre de semestre para estudiantes, con formato Markdown profesional, comentarios explicativos en el código, encabezados claros, y flujo de trabajo bien definido entre Pico W, Flask API y MongoDB en EC2.
 
-Te avisaré cuando esté lista para revisión o para exportarla como documento o repositorio.
 
+![20250508_0555_Smart Lab Connectivity_simple_compose_01jtqzb97rfrh8wjcsh8rgjapt](https://github.com/user-attachments/assets/7fe13072-f6b0-40c4-9be8-0edc9e153149)
 
 # Monitoreo Ambiental Inteligente con Pico W y MongoDB
 
