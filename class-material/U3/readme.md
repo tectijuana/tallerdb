@@ -38,11 +38,69 @@
 
 ---
 
-Perfecto, aquí tienes el **código completo del servidor Flask** que recibiría los datos desde la Raspberry Pi Pico W y los insertará en una colección MongoDB. Este ejemplo está listo para correr en tu instancia EC2 (Ubuntu recomendado) en AWS.
+---
+
+````markdown
+# 🌡️ Proyecto IoT: Pico W + Flask + MongoDB
+
+## 📶 Conexión del Pico W a Wi-Fi y Envío de Temperatura
+
+### Código MicroPython para Raspberry Pi Pico W
+
+```python
+import network
+import urequests
+import time
+import machine
+
+# Wi-Fi abierta
+ssid = "TecNM-ITT"
+password = ""
+
+wlan = network.WLAN(network.STA_IF)
+wlan.active(True)
+wlan.connect(ssid, password)
+
+print("Conectando a Wi-Fi...")
+while not wlan.isconnected():
+    time.sleep(1)
+print("Conectado a:", ssid)
+print("IP:", wlan.ifconfig())
+
+# Sensor interno de temperatura
+sensor_temp = machine.ADC(4)
+conversion_factor = 3.3 / 65535
+
+def leer_temperatura():
+    lectura = sensor_temp.read_u16() * conversion_factor
+    temperatura = 27 - (lectura - 0.706) / 0.001721
+    return round(temperatura, 2)
+
+def enviar_datos():
+    temperatura = leer_temperatura()
+    datos = {
+        "dispositivo": "PicoW_01",
+        "sensor": "temperatura_interna",
+        "valor": temperatura,
+        "unidad": "°C"
+    }
+    try:
+        respuesta = urequests.post("http://999.999.999.999:5000/api/datos", json=datos)
+        print("Respuesta:", respuesta.text)
+        respuesta.close()
+    except Exception as e:
+        print("Error:", e)
+
+while True:
+    enviar_datos()
+    time.sleep(10)
+````
 
 ---
 
-### 📦 Requisitos (instalar en tu EC2 Ubuntu)
+## 🧠 Código del Servidor Flask en EC2
+
+### Instalación de dependencias
 
 ```bash
 sudo apt update
@@ -50,9 +108,7 @@ sudo apt install python3-pip -y
 pip3 install flask pymongo flask-cors
 ```
 
----
-
-### 🧠 Código Flask API (`server.py`)
+### Código `server.py`
 
 ```python
 from flask import Flask, request, jsonify
@@ -63,7 +119,6 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app)
 
-# Conexión a MongoDB (cambia localhost si tu Mongo está remoto)
 client = MongoClient("mongodb://localhost:27017/")
 db = client.iot_pico
 coleccion = db.lecturas_iot
@@ -71,11 +126,7 @@ coleccion = db.lecturas_iot
 @app.route('/api/datos', methods=['POST'])
 def recibir_datos():
     data = request.get_json()
-
-    # Agregar timestamp actual
     data['timestamp'] = datetime.utcnow()
-
-    # Insertar en MongoDB
     resultado = coleccion.insert_one(data)
     return jsonify({"status": "ok", "id": str(resultado.inserted_id)})
 
@@ -85,7 +136,31 @@ if __name__ == '__main__':
 
 ---
 
-### 🌐 Prueba desde navegador o Postman
+## 📊 Estructura del Registro en MongoDB
+
+```json
+{
+  "_id": ObjectId("..."),
+  "dispositivo": "PicoW_01",
+  "sensor": "temperatura_interna",
+  "valor": 29.43,
+  "unidad": "°C",
+  "timestamp": "2025-05-07T17:30:00Z"
+}
+```
+
+---
+
+## 📋 Vista de datos para estudiantes
+
+| 🌐 Dispositivo | 🔍 Sensor            | 🌡️ Valor | 🕒 Timestamp            |
+| -------------- | -------------------- | --------- | ----------------------- |
+| PicoW\_01      | temperatura\_interna | 29.43°C   | 2025-05-07 17:30:00 UTC |
+| PicoW\_01      | temperatura\_interna | 29.51°C   | 2025-05-07 17:30:10 UTC |
+
+---
+
+## 🧪 Prueba manual con Postman
 
 ```http
 POST http://<EC2_PUBLIC_IP>:5000/api/datos
@@ -101,9 +176,7 @@ Content-Type: application/json
 
 ---
 
-### ✅ Verificación en MongoDB
-
-Puedes usar `mongosh` para ver los registros guardados:
+## 🧾 Consulta en MongoDB desde EC2
 
 ```bash
 mongosh
@@ -111,7 +184,6 @@ use iot_pico
 db.lecturas_iot.find().pretty()
 ```
 
----
+```
 
-
-¿Quieres que te prepare un ejemplo funcional de cada parte (código del Pico W, código del servidor Flask y configuración básica de MongoDB en EC2)?
+```
