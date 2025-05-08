@@ -208,7 +208,7 @@ WantedBy=multi-user.target
 ---
 
 En Resumen:
-Claro, aquí te muestro cómo debería verse el árbol de directorios (`$ tree`) del proyecto completo en tu servidor EC2 para que todo funcione correctamente:
+Claro, aquí te muestro cómo debería verse el árbol de directorios del proyecto completo en tu servidor EC2 para que todo funcione correctamente:
 
 ```bash
 /home/ubuntu/flask_api/
