@@ -38,9 +38,6 @@
 
 ---
 
----
-
-````markdown
 # 🌡️ Proyecto IoT: Pico W + Flask + MongoDB
 
 ## 📶 Conexión del Pico W a Wi-Fi y Envío de Temperatura
