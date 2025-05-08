@@ -1,6 +1,5 @@
 
 
-<img width="1463" alt="Screenshot 2025-05-07 at 5 31 42 p m" src="https://github.com/user-attachments/assets/ed4796d3-23a5-4663-94cc-74704fc1bd90" />
 
 # Monitoreo Ambiental Inteligente con Pico W y MongoDB
 
@@ -27,7 +26,7 @@ El sistema se compone de varios elementos que trabajan juntos de forma integrada
 **Flujo de datos:** La Pico W obtiene una medición de temperatura del sensor y la envía en una solicitud HTTP al endpoint del servidor Flask, incluyendo en la cabecera un token secreto para autenticación. El servidor Flask, al recibir la petición, verifica el token, procesa el JSON con los datos y los almacena en la base de datos MongoDB. Opcionalmente, podría responder con un mensaje de éxito. Este ciclo se repite periódicamente, logrando un monitoreo en tiempo real. La siguiente ilustración resume la arquitectura:
 
 ```
-![mermaid-diagram-2025-05-07-172731](https://github.com/user-attachments/assets/085e3295-7652-4cc1-8af2-04967a2887ca)
+<img width="1463" alt="Screenshot 2025-05-07 at 5 31 42 p m" src="https://github.com/user-attachments/assets/ed4796d3-23a5-4663-94cc-74704fc1bd90" />
 
 ```
 
