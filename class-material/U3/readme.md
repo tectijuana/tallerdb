@@ -1,6 +1,6 @@
 # Practicas de Mayo
 
-# Raspberry Pico W o 2W o Wokwi(simulador)
+# Raspberry Pico W y 2W (o Wokwi como simulador)
 
 🧩 **Arquitectura General del Proyecto**
 
