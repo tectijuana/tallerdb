@@ -27,7 +27,8 @@ El sistema se compone de varios elementos que trabajan juntos de forma integrada
 **Flujo de datos:** La Pico W obtiene una medición de temperatura del sensor y la envía en una solicitud HTTP al endpoint del servidor Flask, incluyendo en la cabecera un token secreto para autenticación. El servidor Flask, al recibir la petición, verifica el token, procesa el JSON con los datos y los almacena en la base de datos MongoDB. Opcionalmente, podría responder con un mensaje de éxito. Este ciclo se repite periódicamente, logrando un monitoreo en tiempo real. La siguiente ilustración resume la arquitectura:
 
 ```
-[Sensor DHT11] --> [Pico W (MicroPython)] --(Wi-Fi, HTTP POST)--> [Flask API en EC2] --> [MongoDB en EC2]
+![mermaid-diagram-2025-05-07-172731](https://github.com/user-attachments/assets/085e3295-7652-4cc1-8af2-04967a2887ca)
+
 ```
 
 *Nota:* En esta práctica nos enfocamos en el envío y almacenamiento de datos. La visualización o análisis de los datos almacenados no se implementa aquí, pero la información quedará disponible en MongoDB para consultas futuras. Asimismo, aunque usamos HTTP sobre una red abierta para simplificar, en un sistema real se debería usar **HTTPS** para cifrar la comunicación y proteger tanto el token de autenticación como los datos transmitidos.
