@@ -96,11 +96,17 @@ sudo apt-get upgrade -y
 ### 2.2 Instalar Dependencias
 
 ```bash
-sudo apt-get install -y python3 python3-pip python3-venv mongodb
+sudo apt-get install -y python3 python3-pip python3-venv 
 # Iniciar y habilitar MongoDB
+
+# REVISAR LA INSTALACION OFICIAL EN: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
 sudo systemctl start mongodb
 sudo systemctl enable mongodb
 ```
+
+# Datos de prueva de restaurantes, AirBNB, peliculas via
+https://www.mongodb.com/docs/atlas/sample-data/#std-label-available-sample-datasets
+
 
 ### 2.3 Desplegar Código y Entorno Virtual
 
