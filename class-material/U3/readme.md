@@ -33,6 +33,12 @@ El sistema se compone de varios elementos que trabajan juntos de forma integrada
 
 *Nota:* En esta práctica nos enfocamos en el envío y almacenamiento de datos. La visualización o análisis de los datos almacenados no se implementa aquí, pero la información quedará disponible en MongoDB para consultas futuras. Asimismo, aunque usamos HTTP sobre una red abierta para simplificar, en un sistema real se debería usar **HTTPS** para cifrar la comunicación y proteger tanto el token de autenticación como los datos transmitidos.
 
+# Atajos y Acordeones de uso de MongoDB cliente
+
+https://www.mongodb.com/developer/products/mongodb/cheat-sheet/
+
+
+
 ## Código del Pico W en MicroPython
 
 En el microcontrolador Raspberry Pi Pico W programaremos un script en MicroPython que realice las siguientes tareas:
