@@ -134,7 +134,7 @@ pip install -r requirements.txt
 > • Usa un IDE como **Mu Editor**, **Thonny** o **VS Code con la extensión Pico** para cargar `main.py`.
 
 ```python
-import network, time, urequests, ujson, dht, machine
+import network, time, urequests, ujson, machine
 
 # ——— Configuración Wi-Fi ———
 SSID     = "TecNM-ITT"      # Nombre de la red abierta
@@ -149,18 +149,19 @@ while not wlan.isconnected():
     time.sleep(1)
 print("Conectado. IP:", wlan.ifconfig()[0])
 
-# ——— Sensor DHT11 ———
-sensor = dht.DHT11(machine.Pin(4))  # Pin GP4
-print("Sensor DHT11 listo en GP4")
+# ——— Sensor de temperatura interno ———
+sensor_temp = machine.ADC(4)  # Canal 4 es el sensor interno
+conversion_factor = 3.3 / 65535
 
 # ——— Datos del servidor ———
-SERVER_URL = "http://<IP_SERVIDOR>:5000/api/datos"  # Reemplaza <IP_SERVIDOR>
+SERVER_URL = "http://<IP_SERVIDOR>:5000/api/datos"  # Reemplaza <IP_SERVIDOR> el puerto 5000 es el Fask server
 API_TOKEN  = "TuTokenSecreto123"
 
 def leer_temperatura():
-    """Lee temperatura (°C) del DHT11."""
-    sensor.measure()
-    return sensor.temperature()
+    """Lee temperatura (°C) del sensor interno."""
+    lectura = sensor_temp.read_u16() * conversion_factor
+    temperatura_c = 27 - (lectura - 0.706) / 0.001721
+    return round(temperatura_c, 2)
 
 def enviar_lectura():
     """Envía JSON con temperatura al servidor Flask."""
@@ -187,6 +188,7 @@ def enviar_lectura():
 while True:
     enviar_lectura()
     time.sleep(10)
+
 ```
 
 > **Nota:** Asegúrate de subir `dht.py`, `urequests.py` y `ujson.py` al sistema de archivos de la Pico W si no están incluidos.
