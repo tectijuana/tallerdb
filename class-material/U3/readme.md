@@ -261,7 +261,6 @@ while True:
     enviar_lectura()
     time.sleep(10)
 
-```
 
 > **Nota:** Asegúrate de subir `dht.py`, `urequests.py` y `ujson.py` al sistema de archivos de la Pico W si no están incluidos.
 
