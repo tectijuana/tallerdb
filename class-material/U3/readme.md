@@ -14,6 +14,10 @@ Esta guía paso a paso cubre la arquitectura general del sistema, el código nec
 
 ## Arquitectura del Sistema
 
+## Simulador
+
+https://wokwi.com/projects/new/micropython-pi-pico
+
 **Componentes:**
 
 * **Pico W:** Ejecuta MicroPython, conectado a la red Wi-Fi y lee temperatura desde el sensor interno.
