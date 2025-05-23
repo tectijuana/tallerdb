@@ -1,3 +1,5 @@
+ACTUALIZADO 22 MAYO 11:40PM
+
 Son 3 Unidades cada unidad se pondero y al final solo se dio el promedio.
 
 Lunes de 2-6pm Lab C y L5 puede pasar a revisión o aclaración los interesados.
