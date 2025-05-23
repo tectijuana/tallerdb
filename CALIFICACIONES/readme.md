@@ -1,12 +1,16 @@
-ACTUALIZADO 22 MAYO 11:40PM
+📢 AVISO IMPORTANTE – CALIFICACIONES FINALES
+ACTUALIZADO: 22 de mayo, 11:40 PM
 
-Son 3 Unidades cada unidad se pondero y al final solo se dio el promedio.
+Estimados estudiantes,
 
-Lunes de 2-6pm Lab C y L5 puede pasar a revisión o aclaración los interesados todo este porceso se atenderá presencial no se dará replica a correos ni mensajeria.
+Se informa que las calificaciones finales ya se encuentran disponibles. El promedio final fue calculado con base en las tres unidades del curso, cada una ponderada conforme al plan de evaluación.
 
-No podrá hacer examen de unica oportunidad los que abandonaron la materia, me toco el semestre pasado se presento un estudiante que acudio par de veces y exigia su examen, se le negará por ABANDONO.
+📍 Lunes, de 2:00 a 6:00 PM en Laboratorio C y L5, los estudiantes que deseen revisión o aclaración podrán asistir de forma presencial.
+⚠️ No se responderán dudas por correo electrónico ni por mensajería.
 
-Gracias a todo los estudiantes liberados, espero y sean beneficiados tambien en otras materias.
+IMPORTANTE: No se permitirá realizar examen de única oportunidad a quienes hayan abandonado la materia. Ya ha ocurrido anteriormente que un estudiante con apenas dos asistencias quiso presentar examen final; tal solicitud fue y seguirá siendo rechazada por abandono.
 
+Agradezco a todos los estudiantes que cumplieron y ya se encuentran liberados. Les deseo el mejor de los éxitos también en el resto de sus materias.
+
+Atentamente,
 René
-
