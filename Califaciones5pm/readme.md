@@ -14,3 +14,8 @@ Agradezco a todos los estudiantes que cumplieron y ya se encuentran liberados. L
 
 Atentamente,
 René
+
+
+NOTA:
+
+<img width="457" alt="image" src="https://github.com/user-attachments/assets/75484e1f-b6f4-4385-b2f9-770a8664704a" />
